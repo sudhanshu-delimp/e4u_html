@@ -70,6 +70,16 @@ p{
     background: white;
 }
 
+.loged_in_profile_img{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.dropdown_menu_left_align .dropdown-menu{
+  left: -40px;
+}
+
 @media screen and (max-width: 991px) {
   .nav_center_line {
     display: none;
