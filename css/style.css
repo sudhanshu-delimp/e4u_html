@@ -33,6 +33,11 @@ p{
 .manage_header_padding{
   padding: 0px 81px;
 }
+
+.nav-item, .dropdown-menu .dropdown-item {
+  font-family: Montserrat;
+  font-weight: 500;
+}
 .navbar-light .navbar-nav .nav-link{
   color: white;
 }
