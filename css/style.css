@@ -35,10 +35,30 @@ p{
 .manage_header_padding{
   padding: 0px 81px;
 }
-
+.dropdown-menu{
+  min-width: 12rem;
+}
 .nav-item, .dropdown-menu .dropdown-item {
   font-family: Montserrat;
   font-weight: 500;
+  border-radius: 0px;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21.94px;
+  color: #2C3E50;
+  padding: 5px 0px;
+  
+}
+
+.dropdown-item img{
+ padding: 3px;
+    width: 32px;
+    height: 25px;
+}
+.dropdown-item:hover{
+  background-color: #0c223d;
+  color: white;
 }
 
 .dropdown-item.active, .dropdown-item:active {
@@ -84,6 +104,14 @@ p{
     border-color: transparent; 
     background: white;
 }
+.navbar-light .navbar-nav .show>.nav-link {
+    color: rgb(255 255 255);
+}
+
+.dropdown-menu.show .dropdown-toggle::after{
+  color: green;
+}
+
 
 .loged_in_profile_img{
   height: 40px;
