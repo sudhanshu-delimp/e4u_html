@@ -29,7 +29,9 @@ p{
 	color:#0C223D;
 }
 
+
 /*navbar start here*/
+
 .manage_header_padding{
   padding: 0px 81px;
 }
@@ -99,10 +101,8 @@ p{
   }
 }
 
+
 /*navbar end here*/
-
-
-
 
 
 .section_bg_color .reg_info{
@@ -190,6 +190,12 @@ p{
     /*transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;*/
 }
 
+
+
+
+
+/*button style start here use common button classes*/
+
 .form-control:focus {
     color: #495057;
     background-color: #fff;
@@ -207,7 +213,7 @@ p{
 }
 
 .btn:focus {
-     outline: 0; 
+    outline: 0; 
     box-shadow: none;
 }
 .form-check{
@@ -232,6 +238,61 @@ p{
 .termsandconditions_text_color:hover{
 	color: #ff3c5f;
 }
+
+
+/*button style end here use common button classes*/
+
+
+/*popup model start here*/
+
+@media (min-width: 576px){
+.modal-dialog {
+    max-width: 600px;
+    margin: 1.75rem auto;
+}
+}
+
+
+.modal-footer{
+  border-top: 0px;
+}
+
+.close {
+    text-shadow: none;
+    opacity: 1;
+}
+.close:focus, .close:hover {
+    opacity: 1;
+}
+.popup_modal_title{
+  color: white;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 5px;
+  line-height: 27px;
+}
+
+.popup_massage_box textarea{
+      border: 1px  solid #90A0B7;
+}
+@media screen and (max-width: 767px) {
+  .popup_modal_title {
+   font-size: 16px;
+   font-weight: 500;
+  }
+  .img_resize_in_smscreen{
+  max-width: 32px;
+  max-height: 30px;
+
+}
+ 
+}
+
+
+
+/*popup model end here*/
+
 
 /*accordion style start here*/
 
@@ -280,7 +341,7 @@ p{
   margin: 0;
 }
 
-/*accordion style start here*/
+/*accordion style end here*/
 
 
 @media screen and (max-width: 768px) {
@@ -317,6 +378,31 @@ p{
 }
 
 /*Escort Registration end here*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
