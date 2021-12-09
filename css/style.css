@@ -409,7 +409,59 @@ p{
 
 
 
+/*filter service provider start here*/
+.card_box_style{
+  position: relative;
+  overflow: hidden;
+}
+.content_tops{
+  color: white;
+  background: background: rgba(12, 34, 61, 0.5);
+  position: absolute;
+  top: 0;
+  height: 40px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
 
+.card_top_title_center{
+  margin: auto;
+}
+
+.icon_align_left_right_center_content{
+  display: flex;
+}
+.add_to_favrate{
+  color:#FF3C5F;
+}
+.content_bottom{
+  color: white;
+  background: rgba(12, 34, 61, 0.5);;
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  height: 30%;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+.card_box_style:hover .content_bottom{
+  bottom: 0px;
+}
+
+.give_rating_after_get_servive i{
+  color:#FF3C5F;
+}
+
+
+
+
+
+
+/*filter service provider end here*/
 
 
 
