@@ -298,3 +298,89 @@ border-top: 0px solid #e3e6f0;
     padding: 7px 0px;
 } 
 /*card css end*/
+
+/*escort dashboard request product css from here*/
+
+/*tab css start*/
+ .dk-tab .nav-item {
+    
+    margin: 0px 5px;
+    border-radius: 3px;
+}
+.dk-tab .nav-item a{
+    color:#fff;
+    background: #2C3E50;     border-radius: 3px;      font-size: 14px;
+}
+.nav-item a.active{
+     background: #0c223d !important;  
+}
+.tab-content-bg {
+    background: #f3f3f3;
+    padding: 15px;
+    height: 100vh;
+    width: 925px;
+}
+.member-id{
+    display: flex;
+    align-items: center;
+}
+.member-id svg{
+    margin-right: 10px;
+}
+.about-me-box-one {
+    padding: 20px;
+    background: #fff;margin-top: 30px;    display: flex;
+}
+.about-me-box-one-name{
+    font-size: 43px;
+    font-weight: 700;
+        border: none;
+        
+} 
+.about-me-box-one-name::placeholder{
+color:#0c223d ;
+}
+.about-me-box-one-number{
+       font-size: 24px;
+    font-weight: 700;
+        border: none;
+}
+.about-me-box-one-number::placeholder{
+color:#0c223d ;
+}
+.about-me-box-one-map {
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    width: 95%;
+}
+.about-me-box-one-map::placeholder{
+color:#0c223d ;
+}
+
+.about-md-box-social{
+    display: flex;
+}
+.about-md-box-social div{
+    margin-right: 10px;
+}
+.about-me-right-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 15px;
+}
+/*tab css end* /
+
+/*escort dashboard request product end*/
+
+
+@media screen and (max-width: 900px) {
+.about-me-box-one {
+    padding: 20px;
+    background: #fff;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+}
