@@ -5,6 +5,23 @@
     border-radius: 7px;
         width: 60% !important;
 }
+.save_profile_btn{
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    background: #2C3E50;
+    color: #fff;
+    border-radius: 0.35rem;
+}
+.whoiamtitle{
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 57px;
+    color: #FF3C5F;
+}
+
 .btn{
     padding: 0px 0px 0px 9px;
 }
@@ -309,16 +326,16 @@ border-top: 0px solid #e3e6f0;
 }
 .dk-tab .nav-item a{
     color:#fff;
-    background: #2C3E50;     border-radius: 3px;      font-size: 14px;
+    background: #2C3E50;
+    border-radius: 3px;
+    font-size: 14px;
 }
 .nav-item a.active{
      background: #0c223d !important;  
 }
 .tab-content-bg {
     background: #f3f3f3;
-    padding: 15px;
-    height: 100vh;
-    width: 925px;
+   /* padding: 20px;*/
 }
 .member-id{
     display: flex;
@@ -327,6 +344,13 @@ border-top: 0px solid #e3e6f0;
 .member-id svg{
     margin-right: 10px;
 }
+
+
+
+.box_shadow_fill_profile{
+    box-shadow: 0 0 2px 0px;
+}
+
 .about-me-box-one {
     padding: 20px;
     background: #fff;margin-top: 30px;    display: flex;
@@ -334,45 +358,185 @@ border-top: 0px solid #e3e6f0;
 .about-me-box-one-name{
     font-size: 43px;
     font-weight: 700;
-        border: none;
+    border: none;
+    padding: 5px 0px;
+    color:#0c223d;
         
 } 
-.about-me-box-one-name::placeholder{
-color:#0c223d ;
-}
+
 .about-me-box-one-number{
-       font-size: 24px;
+    font-size: 24px;
     font-weight: 700;
-        border: none;
+    border: none;
+    padding: 5px 0px;
+    color:#0c223d ;
+
 }
-.about-me-box-one-number::placeholder{
-color:#0c223d ;
-}
+
 .about-me-box-one-map {
     font-size: 16px;
     font-weight: 700;
     border: none;
-    width: 95%;
-}
-.about-me-box-one-map::placeholder{
-color:#0c223d ;
+    padding: 10px 0px;
+    color:#0c223d;
 }
 
-.about-md-box-social{
-    display: flex;
-}
-.about-md-box-social div{
-    margin-right: 10px;
-}
-.about-me-right-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: 15px;
-}
-/*tab css end* /
 
-/*escort dashboard request product end*/
+
+
+/*first tab about me section*/
+
+.gap_between_btns{
+    gap: 15px;
+}
+
+
+.form_process p{
+    font-family: Quicksand;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #192A3E;
+    margin: 0px;
+    padding: 10px 0px;
+}
+.steps_to_filled_form{
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0C223D;
+}
+
+
+.filled_form_in_persantage{
+      font-family: Poppins;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+    color: #0C223D;
+}
+.manage_process_bar_padding{
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.define_process_bar_width{
+    height: 0.3rem;
+}
+.define_process_bar_color{
+    background-color: #0c223d;
+}
+
+
+.fill_profile_headings_global h2{
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 45px;
+    color: #0C223D;
+
+}
+
+.about_me_drop_down_info{
+    padding: 20px;
+    background: #fff;
+    margin: 15px 0px;
+}
+
+.about_me_heading_in_first_tab{
+    border-bottom: 1px solid #90A0B7;
+}
+.padding_20_all_side{
+    padding: 20px 0px;
+}
+
+.selecated_languages{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+}
+.languages_choosed_from_drop_down{
+    padding: 5px;
+    background: #5D6D7E;
+    border-radius: 4px;
+    color: white;
+}
+
+
+
+
+@media screen and (max-width: 540px) {
+  .remove_padding_in_ph{
+    padding: 0px 0px;
+}
+}
+
+/*first tab about me section*/
+
+
+/*second tab myservice and rate start here*/
+.my_service_anal{
+ padding: 8px;
+ background: #5D6D7E;
+ border-radius: 5px;
+ color: white;
+}
+.service_rate_dolor_symbol{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 8px;
+}
+
+/*second tab myservice and rate end here*/
+
+
+
+/*tab css end*/
+
+
+
+/*tab responsive start here*/
+
+@media screen and (max-width: 767px) {
+    .about-me-box-one-name{
+     font-size: 28px;
+    }
+    .about-me-box-one-number{
+     font-size: 18px;
+    }
+    .about-me-box-one-map{
+     font-size: 14px;
+    }
+}
+
+
+
+@media screen and (max-width: 991px) {
+    .filled_form_in_persantage{
+     font-size: 36px;
+     line-height: 32px;
+    }
+}
+
+
+    
+    @media screen and (max-width: 6px) {
+        .tab-content-bg{
+            padding: 0px;
+        }
+}
+
+
+
+/*tab responsive end here*/
+
+
+
+
+
+/*escort dashboard request product end  */
 
 
 @media screen and (max-width: 900px) {

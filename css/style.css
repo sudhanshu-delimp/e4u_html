@@ -294,6 +294,17 @@ p {
 
 /*button style end here use common button classes*/
 
+/*general start here css*/
+
+.normal_heading {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+/*general end here css*/
+
 
 /*popup model start here*/
 
@@ -349,8 +360,6 @@ p {
 
 /*home page start here*/
 
-
-
 .homebanner_bg{
   background-image: url(../img/homebgbanner.png);
   background-repeat: no-repeat;
@@ -375,6 +384,7 @@ p {
     line-height: 27px;
     background-color: #2C3E50;
     border-color: #2C3E50;
+    margin: 0px 10px 10px 0px;
 }
 .btn_become_pin_up:hover{
   color: #fff;
@@ -463,7 +473,7 @@ p {
   line-height: 27px;
   background-color: #FF3C5F;
   border-color: #FF3C5F;
-  margin: 15px;
+  margin:0px 10px 10px 0px;
 }
 .btn_advertiser:hover{
   color: #fff;
@@ -477,7 +487,7 @@ p {
   line-height: 27px;
   background-color: #fff;
   border-color: #fff;
-  margin:15px;
+  margin:0px 10px 10px 0px;
 }
 .btn_viewer:hover{
   color: #2C3E50;
@@ -485,10 +495,104 @@ p {
 
 /*home page media query start here*/
 
+@media screen and (max-width: 991px) {
+
+  .padding_btm_ninty_pxonly {
+    padding-bottom: 55px;
+}
+.padding_ninty_top_ninty_px {
+    padding-top: 55px;
+}
+
+ .home_heading_first{
+      font-size: 30px;
+    line-height: 32px;
+ }
+ .site_second_heading h2{
+    font-size: 30px;
+    line-height: 32px;
+ }
+ .normal_heading{
+  font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 0.5rem;
+ }
+
+
+
+}
+
+
+
+
 @media screen and (max-width: 767px) {
+
+  p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
   .homebanner_bg {
     background-image: none;
   }
+
+  .padding_btm_ninty_pxonly{
+    padding-bottom: 45px;
+  }
+  .padding_ninty_top_ninty_px{
+   padding-top: 45px; 
+  }
+
+   .home_heading_first {
+   font-size: 24px;
+   line-height: 28px;
+  }
+  .normal_heading{
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+  }
+   .site_second_heading h2{
+    font-size: 24px;
+    line-height: 28px;
+ }
+
+ .btn_advertiser{
+  font-size: 14px;
+  line-height: 24px;
+ }
+ .btn_viewer {
+    font-size: 14px;
+    line-height: 24px;
+}
+ .btn_become_pin_up{
+  font-size: 14px;
+  line-height: 24px;
+ }
+ .point_of_diff{
+  padding: 25px 20px;
+}
+ .point_of_diff h3 {
+    padding-bottom: 20px;
+    font-size: 22px;
+    line-height: 30px;
+    margin: 0px;
+}
+
+}
+
+@media screen and (max-width: 478px) {
+ .btn_advertiser{
+  margin: 5px 0px;;
+  width: 100%;
+ } 
+ .btn_viewer{
+  margin: 5px 0px;;
+  width: 100%;
+ }
+ .btn_become_pin_up{
+  margin: 5px 0px;;
+  width: 100%;
+ }
 }
 
 
@@ -607,14 +711,6 @@ p {
   border: 1px solid #90A0B7;
   border-radius: 4px;
 }
-
-.normal_heading {
-  font-family: Poppins;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 36px;
-}
-
 
 
 
