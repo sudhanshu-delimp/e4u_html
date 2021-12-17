@@ -1,4 +1,8 @@
- 
+
+.removebox_shdow:focus{
+    outline: 0;
+    box-shadow:none;
+}
 
 .dk-border-radius{
     border: 1px solid #D6D7E3;
@@ -484,12 +488,32 @@ border-top: 0px solid #e3e6f0;
 
 
 /*second tab myservice and rate start here*/
+
+.manage_tag_style ul{
+    padding: 0px;
+    list-style: none;
+}
+.manage_tag_style ul li{
+    display: inline-block;
+}
+.input_border{
+    width: 60px;
+    border-color: transparent;
+    border-radius: 5px;
+    padding: 3px 8px;
+    margin: 0px 10px;
+}
+/*.input.input_border::before{
+    content: '$';
+}*/
+
 .my_service_anal{
- padding: 8px;
+ padding: 5px;
  background: #5D6D7E;
  border-radius: 5px;
  color: white;
 }
+
 .service_rate_dolor_symbol{
     display: flex;
     flex-wrap: nowrap;

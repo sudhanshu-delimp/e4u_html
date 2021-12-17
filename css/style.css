@@ -619,7 +619,133 @@ p {
 
 /*home page end here*/
 
+/*pinup profile page start here*/
 
+.pinup_profile_name{
+font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 72px;
+color: #0C223D;
+}
+
+.age_style span{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 72px;
+  color: #FF3C5F;
+}
+
+.pinup_meet_with{
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 27px;
+}
+
+.pinup_meet_with img{
+margin: 5px;
+}
+
+.padding_btm_pinup_pera{
+  padding-bottom: 31px;
+}
+.manage_gap_text_img{
+gap: 20px;
+}
+.profile_message h4{
+  margin-bottom: 7px;
+  font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 16px;
+color: #5D6D7E;
+
+}
+
+.profile_hr h4{
+  margin-top: 12px;
+  font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 6px;
+color: #FF3C5F;
+}
+.pinup_social_profile_padiing_top_btm{
+  padding: 41px 0px;
+}
+
+.pinup_social_icons{
+ 
+}
+
+
+.smGlobalBtn{ 
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+   background: #0C223D;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #FF3C5F;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 25px;
+    -moz-border-radius:25px;
+    -webkit-border-radius:25px;
+}
+.smGlobalBtn:hover{
+  color: #FF3C5F;
+}
+
+.pinup_view_profile_btn{
+background: #2C3E50;
+box-shadow: 0px 4px 10px rgba(16, 156, 241, 0.24);
+border-radius: 4px;
+color: #fff;
+padding: 14px 52px;
+font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+}
+.pinup_view_profile_btn:hover{
+  color: #fff;
+}
+.pinup_locatin ul{
+  list-style: none;
+  padding: 0px;
+}
+.pinup_locatin ul li{
+  display: inline-block;
+}
+.pinup_locatin_icon i{
+font-size: 25px;
+color: #FF3C5F;
+}
+.pinup_locatin_text{
+  font-family: Quicksand;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+color: #90A0B7;
+}
+
+
+
+/*pinup profile page end here*/
 
 
 /*accordion style start here*/
@@ -940,6 +1066,103 @@ p {
 
 
 /*paginaction end here*/
+
+
+/*profile description page start here*/
+
+.like_and_process_bar_padding{
+  padding: 20px;
+  background: #2C3E50;
+}
+
+
+.profile_description_banner{
+  height: 496px;
+  width: 100vw;
+  background-size: cover;
+  background: url(../img/profile/profiledescrition.png);
+  background-repeat: no-repeat;
+}
+
+.manage_padding_margin_bg_color {
+    padding: 20px;
+    background: #fff;
+    margin: 15px 0px;
+}
+
+
+.box_shadow {
+    box-shadow: 0 0 2px 0px;
+}
+.profile_card_border{
+  border-bottom: 1px solid #90A0B7;
+}
+
+.profile_page_box_heading h2 {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 45px;
+    color: #0C223D;
+}
+
+.padding_20_tob_btm_side {
+    padding: 20px 0px;
+}
+
+.gap_between_text_and_img{
+  column-gap: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*profile description page end here*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*filter service provider end here*/
