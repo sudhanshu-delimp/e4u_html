@@ -372,9 +372,13 @@ font-weight: 600 !important;color: #000 !important;
 .member-id{
     display: flex;
     align-items: center;
+    padding-top: 10px;
 }
 .member-id svg{
     margin-right: 10px;
+}
+.member-id span{
+    color: #90A0B7;
 }
 .box_shadow_fill_profile{
     box-shadow: 0 0 2px 0px;
