@@ -635,6 +635,10 @@ tr.bg{
     background: #0c223d;
     margin-top: 10px;width: 100%;
 }
+.add-page-btn span{
+       padding: 13px 6px !important;
+  
+}
 
 .btn-primary:hover {
     color: #fff;

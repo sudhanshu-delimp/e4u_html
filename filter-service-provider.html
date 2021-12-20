@@ -97,7 +97,7 @@
             </div>
          </div>
       </nav>
-   <section class="padding_ninty_top_ninty_px">
+   <section class="">
       <div class="container">
          <div class="search_filters">
             <div class="search_filters_inside">
@@ -106,16 +106,31 @@
                      <h5 class="normal_heading">Search Filters</h5>
                   </div>
                   <div class="col-md-5">
-                     <div class="display_inline_block">search</div>
-                     <div class="display_inline_block margin_btn_reset">
-                        <a class="reset_filter" href="#">
-                           <i class="fa fa-repeat" aria-hidden="true"></i>
-                        </a>
+                     <div class="display_inline_block">
+                        
+                        <div class="input-group custome_form_control managefilter_search_btn_style rounded mb-2">
+                           <button class="input-group-text border-0 remove_bg_color_of_search_btn" id="search-addon" type="submit">
+                              <i class="fa fa-search" aria-hidden="true"></i>
+                           </button>
+                           <input type="search" class="form-control remove_border_btm rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />                           
+                        </div>
+
                      </div>
-                     <div class="display_inline_block margin_btn_reset">
-                        <a class="reset_filter" href="#">
-                          <i class="fa fa-th-large" aria-hidden="true"></i>
-                        </a>
+                     <div class="display_inline_block">
+                     <div class="margin_btn_reset">
+                        <button type="reset" class="btn reset_filter">
+                            <i class="fa fa-repeat" aria-hidden="true"></i>
+                         </button>
+                        
+                     </div>
+                     </div>
+                     <div class="display_inline_block">
+                     <div class="margin_btn_reset">
+                        <button type="button" class="btn reset_filter">
+                            <i class="fa fa-list" aria-hidden="true"></i>
+                         </button>
+                        
+                     </div>
                      </div>
 
                       <div class="display_inline_block helpquation">
@@ -128,45 +143,54 @@
                </div>
                
                <div class="fiter_btns">
-                  <div class="dropdown display_inline_block mb-1 mr-3">
-                     <button class="btn bgtransparent dropdown-toggle" type="button" id="dropdownMenuButtonone" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                     All States
-                     </button>
-                     <div class="dropdown-menu btn_drop_down" aria-labelledby="dropdownMenuButtonone">
-                        <a class="dropdown-item" href="#">demo</a>
-                     </div>
+                  <div class="display_inline_block mb-1 mr-3">
+                     <select class="form_control_with_border form-control-sm" id="">
+                           <option>All States</option>
+                           <option>Male</option>
+                           <option>Female</option>
+                     </select>
                   </div>
-                  <div class="dropdown display_inline_block mb-1 mr-3">
-                     <button class="btn bgtransparent dropdown-toggle" type="button" id="dropdownMenuButtonone" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                     Gender
-                     </button>
-                     <div class="dropdown-menu btn_drop_down" aria-labelledby="dropdownMenuButtonone">
-                        <a class="dropdown-item" href="#">Male</a>
-                        <a class="dropdown-item" href="#">Female</a>
-                     </div>
+                  <div class="display_inline_block mb-1 mr-3">
+                     <select class="form_control_with_border form-control-sm" id="">
+                           <option>Gender</option>
+                           <option>Male</option>
+                           <option>Female</option>
+                     </select>
                   </div>
 
                   <div class="display_inline_block mb-1 mr-3">
-                     <button class="btn bgtransparent" type="button" id="" aria-haspopup="true" aria-expanded="false">
-                     filter 1
-                     </button>
+                     <select class="form_control_with_border form-control-sm" id="">
+                           <option>filter 1</option>
+                           <option>Male</option>
+                           <option>Female</option>
+                     </select>
                   </div>
                   <div class="display_inline_block mb-1 mr-3">
-                     <button class="btn bgtransparent" type="button" id="" aria-haspopup="true" aria-expanded="false">
-                     filter 2
+                     <select class="form_control_with_border form-control-sm" id="">
+                           <option>filter 2</option>
+                           <option>Male</option>
+                           <option>Female</option>
+                     </select>
+                  </div>
+                  <div class="display_inline_block mb-1 mr-3">
+                     <select class="form_control_with_border form-control-sm" id="">
+                           <option>All services</option>
+                           <option>Male</option>
+                           <option>Female</option>
+                     </select>
+                  </div>
+                  <div class="display_inline_block mb-1 mr-3">
+                     <button type="button" class="btn verified_btn_bg_color verified_text_color">
+                     <img src="img/protected2.png"> Verified
+                  </button>
+                  </div>
+                  <div class="display_inline_block mb-1 mr-3">
+                     <button type="button" class="btn reset_filter">
+                        Apply Filters
                      </button>
                   </div>
 
-                   <div class="dropdown display_inline_block mb-1 mr-3">
-                     <button class="btn bgtransparent dropdown-toggle" type="button" id="dropdownMenuButtonone" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                     All services
-                     </button>
-                     <div class="dropdown-menu btn_drop_down" aria-labelledby="dropdownMenuButtonone">
-                        <a class="dropdown-item" href="#">demo</a>
-                     </div>
-                  </div>
-
-
+                  
 
 
                </div>
@@ -176,32 +200,51 @@
                         <h5 class="normal_heading">Service Tags</h5>
                      </div>
                      <div class="col-md-7">
-                        <div class="dropdown display_inline_block mb-1 mr-3">
-                           <button class="btn bgtransparent dropdown-toggle" type="button" id="dropdownMenuButtonone" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                           Fun Stuff - On you
-                           </button>
-                           <div class="dropdown-menu btn_drop_down" aria-labelledby="dropdownMenuButtonone">
-                              <a class="dropdown-item" href="#">demo</a>
-                           </div>
-                        </div>
-                        <div class="dropdown display_inline_block mb-1 mr-3">
-                           <button class="btn bgtransparent dropdown-toggle" type="button" id="dropdownMenuButtonone" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                           Fun Stuff - On you
-                           </button>
-                           <div class="dropdown-menu btn_drop_down" aria-labelledby="dropdownMenuButtonone">
-                              <a class="dropdown-item" href="#">demo</a>
-                           </div>
-                        </div>
-                        <div class="dropdown display_inline_block mb-1 mr-3">
-                           <button class="btn bgtransparent dropdown-toggle" type="button" id="dropdownMenuButtonone" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                           Fun Stuff - On you
-                           </button>
-                           <div class="dropdown-menu btn_drop_down" aria-labelledby="dropdownMenuButtonone">
-                              <a class="dropdown-item" href="#">demo</a>
-                           </div>
-                        </div>
+
+                     <div class="display_inline_block mb-1 mr-3">
+                     <select class="form_control_with_border form-control-sm" id="">
+                           <option>Fun Stuff - On you</option>
+                           <option>Male</option>
+                           <option>Female</option>
+                     </select>
+                  </div>
+
+                        <div class="display_inline_block mb-1 mr-3">
+                     <select class="form_control_with_border form-control-sm" id="">
+                           <option>Fun Stuff - On you</option>
+                           <option>Male</option>
+                           <option>Female</option>
+                     </select>
+                  </div>
+                        <div class="display_inline_block mb-1 mr-3">
+                     <select class="form_control_with_border form-control-sm" id="">
+                           <option>Fun Stuff - On you</option>
+                           <option>Male</option>
+                           <option>Female</option>
+                     </select>
+                  </div>
                      </div>
                      <div class="col-md-2">Clear Tags</div>
+                  </div>
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="selected_service_tag">
+                        <ul>
+                           <li class="seleceted_service_text_and_icon">
+                              <p>Massage Thai</p>
+                              <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+                           </li>
+                           <li class="seleceted_service_text_and_icon">
+                              <p>Happy Ending</p>
+                              <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+                           </li>
+                           <li class="seleceted_service_text_and_icon">
+                              <p>Happy Ending</p>
+                              <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+                           </li>
+                        </ul>
+                        </div>
+                     </div>
                   </div>
                </div>
             </div>
