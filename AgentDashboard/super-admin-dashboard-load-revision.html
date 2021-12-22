@@ -338,12 +338,12 @@
                         <div class="col-sm-12 col-md-12 col-lg-9 ">
                             <!-- Begin Page Content -->
                             <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                                <h2 class="h4 mb-0 text-gray-800 font-weight-500">Revision</h2>
+                                <h2 class="h4 mb-0 text-gray-800 font-weight-500">Revision - {{Page Title}}</h2>
                             </div>
                             <h5 class="d-flex">
                               <div class="date" id="printDate"></div>
                               
-                              <div class="date" id="printTime"></div>
+                              <div style="margin-left: 10px;" class="date" id="printTime"></div>
                             </h5>
                             <div class="row">
                                 <div class="col-md-12">
@@ -375,22 +375,14 @@
                                                         &lt;H2&gt;</span>
                                                     tags.</label>
                                             </div>
-                                            <div class="col-md-6">
-                                                <h6>Display Date</h6>
-                                                <div class="form-group form-check">
-                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                                    <label class="form-check-label" for="exampleCheck1">Displays the
-                                                        date from when the content was last updated at the bottom of
-                                                        the page</label>
-                                                </div>
-                                            </div>
+                                             
 
                                         </div>
                                     </form>
                                 </div>
 
                             </div>
-                            <textarea name="newpage"></textarea>
+                                    <div class="mt-4"><textarea name="newpage"></textarea></div>
                         </div>
                         <!--btn and cart in one row end here now middle content start from here-->
 
@@ -529,15 +521,10 @@ function printDate() {
   var month = date.getMonth();
   var year = date.getFullYear();
 
-  elementDate.innerHTML = day + " / " + month + " / " + year;
+  elementDate.innerHTML = day + "/" + month + "/" + year;
 }
 
-function printDay() {
-  date = new Date();
-  var numberOfDay = date.getDay();
-  var day = listOfDays[numberOfDay];
-  elementDay.innerHTML = day;
-}
+ 
 
 function printTime() {
   date = new Date();
@@ -545,26 +532,24 @@ function printTime() {
   var minutes = date.getMinutes();
   var seconds = date.getSeconds();
 
-  if (seconds < 10) {
-    seconds = "0" + seconds;
-  }
+ 
   if (minutes < 10) {
     minutes = "0" + minutes;
   }
   if (hours > 12) {
     hours = hours - 12;
-    elementTime.innerHTML = hours + " : " + minutes + " : " + seconds + "  PM ";
+    elementTime.innerHTML = hours + ":" + minutes + " PM ";
   } else if (hours < 12) {
-    elementTime.innerHTML = hours + " : " + minutes + " : " + seconds + "  AM ";
+    elementTime.innerHTML = hours + ":" + minutes + " AM ";
   } else if (hours = 12) {
-    elementTime.innerHTML = hours + " : " + minutes + " : " + seconds + "  PM ";
+    elementTime.innerHTML = hours + ":" + minutes + " PM ";
   }
 }
 
 setInterval(function() {
   printTime();
   printDate();
-  printDay();
+ 
 }, 1000);   
     </script>
 

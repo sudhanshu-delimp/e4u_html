@@ -637,7 +637,7 @@ tr.bg{
     font-size: 12px;
 }
 .new-page-input-text label{
-    font-size: 12px;
+    font-size: 10px;
     padding-bottom: 15px;
 }
 .new-page-input-text label span{
@@ -858,3 +858,7 @@ background-color:green;
 }
 /*professional products css end here*/
 
+
+.page-published{
+    color:red;
+}
