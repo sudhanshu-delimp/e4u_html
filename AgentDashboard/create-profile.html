@@ -26,19 +26,19 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/> -->
         <!-- file upload libruary start here -->
     <link rel="stylesheet" href="vendor/file-upload/css/jquery.fileupload.css" />
     <link rel="stylesheet" href="vendor/file-upload/css/jquery.fileupload-ui.css" />
     <link rel="stylesheet" href="vendor/file-upload/css/jquery.fileupload-noscript.css"/>
  <link rel="stylesheet" href="vendor/file-upload/css/jquery.fileupload-ui-noscript.css"/>
+    <link rel="stylesheet" href="vendor/file-upload/css/pin.css"/>
+
     
     <!-- file upload libruary end here -->
     <link href="css/dk-style.css" rel="stylesheet">
+    <link href="css/fill-profile-details.css" rel="stylesheet">
     <style type="text/css">
-        .fade:not(.show) {
-    opacity: 1;
-}
+ 
     </style>
 </head>
 
@@ -420,53 +420,103 @@
                                                           </form>
                                                        </div>
                             </div>
+
+
+
+                            <div class="about_me_drop_down_info box_shadow_fill_profile">
+                                                       <div class="about_me_heading_in_first_tab fill_profile_headings_global">
+                                                          <h2>Social Profile</h2>
+                                                       </div>
+                                                       <div class="padding_20_all_side">
+                                                          <form action="" method="">
+                                                             <div class="row">
+                                                                <div class="col-lg-6">
+                                                                   <div class="form-group row">
+                                                                      <label class="col-sm-5" for="exampleFormControlSelect1"><span class="manage_social_profile_icons"><i class="fab fa-facebook-f"></i></span></label>
+                                                                      <div class="col-sm-7">
+                                                                         <input type="txt" class="form-control form-control-sm removebox_shdow" placeholder="Facebook" aria-label="facebook">
+                                                                      </div>
+                                                                   </div>
+                                                                   <div class="form-group row">
+                                                                      <label class="col-sm-5" for="exampleFormControlSelect1"><span class="manage_social_profile_icons"><i class="fab fa-instagram"></i></span></label>
+                                                                      <div class="col-sm-7">
+                                                                          <input type="txt" class="form-control form-control-sm removebox_shdow" placeholder="Instagram" aria-label="instagram">
+                                                                      </div>
+                                                                   </div>
+                                                                   
+                                                                                                                             
+                                                                   
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                   <div class="form-group row">
+                                                                      <label class="col-sm-5" for="exampleFormControlSelect1"><span class="manage_social_profile_icons"><i class="fab fa-twitter"></i></span></label>
+                                                                      <div class="col-sm-7">
+                                                                         <input type="txt" class="form-control form-control-sm removebox_shdow" placeholder="Twitter" aria-label="twitter">
+                                                                      </div>
+                                                                   </div>
+                                                                   
+                                                                  
+                                                                </div>
+                                                             </div>
+                                                             <div class="row">
+                                                                <div class="col-md-12 text-right"><button type="submit" class="save_profile_btn">Update</button></div>
+                                                             </div>
+                                                          </form>
+                                                       </div>
+                            </div>
+
+
+
+
+
                             <div class="about_me_drop_down_info box_shadow_fill_profile">
                                                        <div class="about_me_heading_in_first_tab fill_profile_headings_global">
                                                           <h2>Choose Photos/videos</h2>
                                                        </div>
                                                        <div class="padding_20_all_side">
                                                          <form id="fileupload" action="https://jquery-file-upload.appspot.com/" method="POST" enctype="multipart/form-data">
-   <noscript>
-      <input type="hidden" name="redirect" value="https://blueimp.github.io/jQuery-File-Upload/"/>
-   </noscript>
-   <div class="row fileupload-buttonbar">
-      <div class="col-lg-7">
-         <span class="btn btn-success fileinput-button remove_padding" id="file">
-         <i class="glyphicon glyphicon-plus"></i>
-         <input type="file" name="files[]" multiple />
-         </span>
-         <button type="submit" class="btn btn-primary start remove_padding">
-         <i class="glyphicon glyphicon-upload"></i>
-         <span>Start upload</span>
-         </button>
-         <button type="reset" class="btn btn-warning cancel remove_padding">
-         <i class="glyphicon glyphicon-ban-circle"></i>
-         <span>Cancel upload</span>
-         </button>
-         <button type="button" class="btn btn-danger delete remove_padding">
-         <i class="glyphicon glyphicon-trash"></i>
-         <span>Delete selected</span>
-         </button>
-         <input type="checkbox" class="toggle" />
-         <!-- The global file processing state -->
-         <span class="fileupload-process"></span>
-      </div>
-      <!-- The global progress state -->
-      <div class="col-lg-5 fileupload-progress fade">
-         <!-- The global progress bar -->
-         <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100">
-            <div
-               class="progress-bar progress-bar-success" style="width: 0%;"></div>
-         </div>
-         <!-- The extended global progress state -->
-         <div class="progress-extended">&nbsp;</div>
-      </div>
-   </div>
-   <!-- The table listing the files available for upload/download -->
-   <table role="presentation" class="table table-striped">
-      <tbody class="files"></tbody>
-   </table>
-</form>
+                                                           <noscript>
+                                                              <input type="hidden" name="redirect" value="https://blueimp.github.io/jQuery-File-Upload/"/>
+                                                           </noscript>
+                                                           <div class="row fileupload-buttonbar">
+                                                              <div class="col-lg-7">
+
+                                                                 <span class="btn btn-success fileinput-button remove_padding" id="file">
+                                                                 <i class="glyphicon glyphicon-plus"></i>
+                                                                 <input type="file" name="files[]" class="input_style" multiple />
+                                                                 </span>
+                                                                 <button type="submit" class="btn btn-primary start remove_padding">
+                                                                 <i class="glyphicon glyphicon-upload"></i>
+                                                                 <span>Start upload</span>
+                                                                 </button>
+                                                                 <button type="reset" class="btn btn-warning cancel remove_padding">
+                                                                 <i class="glyphicon glyphicon-ban-circle"></i>
+                                                                 <span>Cancel upload</span>
+                                                                 </button>
+                                                                 <button type="button" class="btn btn-danger delete remove_padding">
+                                                                 <i class="glyphicon glyphicon-trash"></i>
+                                                                 <span>Delete selected</span>
+                                                                 </button>
+                                                                 <input type="checkbox" class="toggle" />
+                                                                 <!-- The global file processing state -->
+                                                                 <span class="fileupload-process"></span>
+                                                              </div>
+                                                              <!-- The global progress state -->
+                                                              <div class="col-lg-5 fileupload-progress fade">
+                                                                 <!-- The global progress bar -->
+                                                                 <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                                                    <div
+                                                                       class="progress-bar progress-bar-success" style="width: 0%;"></div>
+                                                                 </div>
+                                                                 <!-- The extended global progress state -->
+                                                                 <div class="progress-extended">&nbsp;</div>
+                                                              </div>
+                                                           </div>
+                                                           <!-- The table listing the files available for upload/download -->
+                                                           <table role="presentation" class="table table-striped">
+                                                              <tbody class="files"></tbody>
+                                                           </table>
+                                                        </form>
                                                        </div>
                                                     </div>
                             
@@ -572,13 +622,13 @@
                        </button>
                      {% } %}
                      {% if (!i && !o.options.autoUpload) { %}
-                         <button class="btn btn-primary start" disabled>
+                         <button class="btn btn-primary btn-primary remove_padding start" disabled>
                              <i class="glyphicon glyphicon-upload"></i>
                              <span>Start</span>
                          </button>
                      {% } %}
                      {% if (!i) { %}
-                         <button class="btn btn-warning cancel">
+                         <button class="btn btn-warning btn-primary remove_padding cancel">
                              <i class="glyphicon glyphicon-ban-circle"></i>
                              <span>Cancel</span>
                          </button>
@@ -621,7 +671,7 @@
                          </button>
                          <input type="checkbox" name="delete" value="1" class="toggle">
                      {% } else { %}
-                         <button class="btn btn-warning cancel">
+                         <button class="btn btn-warning remove_padding cancel">
                              <i class="glyphicon glyphicon-ban-circle"></i>
                              <span>Cancel</span>
                          </button>

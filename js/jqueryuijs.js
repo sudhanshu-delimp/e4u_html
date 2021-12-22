@@ -68,4 +68,17 @@
      $('input[type="range"]').on( 'input', rangeInputChangeEventHandler);
 });
 
-
+$(document).ready(function() {
+    $(".hide_data").hide();
+    $('#y').click(function() {
+        var text = $('#y').html();
+        // alert(text);
+        if (text == 'Read more&gt;&gt;') {
+            $(this).text('Read less<<');
+        }
+        if (text == 'Read less&lt;&lt;') {
+            $(this).text('Read more>>');
+        }
+        $(".hide_data").toggle();
+    });
+});

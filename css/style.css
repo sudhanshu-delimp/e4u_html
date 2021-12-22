@@ -392,6 +392,7 @@ p {
   font-weight: 700;
   font-size: 48px;
   line-height: 56.88px;
+  color: #0C223D;
 }
 
 .btn_become_pin_up{
@@ -1067,9 +1068,38 @@ color: #90A0B7;
 
 /*paginaction end here*/
 
+/* filter service provider responsive start here */
+  
+  @media (min-width:993px) and (max-width:1199px) {
+    .content_bottom {
+        bottom: -200px;
+    }
+}
 
-/*profile description page start here*/
 
+
+
+/* filter service provider responsive end here */
+
+
+
+/*filter service provider end here*/
+
+/*profile description Harmony page start here*/
+.my_legbox{
+  font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 27px;
+background: #192A3E;
+text-align: center;
+color: #FFFFFF;
+}
+.my_legbox i{
+  color: #FF3C5F;
+  padding: 0px 3px; 
+}
 .profile_page_title h2{
   font-family: Poppins;
 font-style: normal;
@@ -1308,10 +1338,25 @@ line-height: 24px;
 
 /*testimonial start here*/
 
+.manage_testimonials_profile_img img{
+  max-width: 80px;
+  max-height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.testimonial_by{
+  font-family: Quicksand;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 30px;
+color: #0C223D;
+}
 
 .arroww{
   position: absolute;
-    right: 0;
+  right: 15px;
 }
 .star-rating{
   text-align: left;
@@ -1321,37 +1366,14 @@ line-height: 24px;
     justify-content: flex-start;
     align-items: center;
 }
-h2 {
-  color: #333;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  position: relative;
-  margin: 25px 0 50px;
-}
-h2::after {
-  content: "";
-  width: 100px;
-  position: absolute;
-  margin: 0 auto;
-  height: 3px;
-  background: #ffdc12;
-  left: 0;
-  right: 0;
-  bottom: -10px;
-}
+
 .carousel {
-  width: 650px;
   margin: 0 auto;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 .carousel .carousel-item {
-  color: #999;
-  font-size: 14px;
   text-align: center;
   overflow: hidden;
-  min-height: 340px;
 }
 .carousel .carousel-item a {
   color: #eb7245;
@@ -1385,27 +1407,29 @@ h2::after {
   display: block; 
   padding-bottom: 5px;
 }
-.carousel .star-rating i {
+.carousel .testi_icon_color i{
   font-size: 18px;
-  color: #ffdc12;
+  color: #FF3C5F;
 }
-.carousel-control-prev, .carousel-control-next {
+.carousel .testi_icon_color b{
+  color: #FF3C5F;
+}
+.arroww .carousel-control-prev, .arroww .carousel-control-next {
   width: 30px;
   height: 30px;
-  border-radius: 50%;
-  background: #999;
+  background: #2C3E50;
   text-shadow: none;
   top: 4px;
 }
-.carousel-control-prev i, .carousel-control-next i {
+.arroww .carousel-control-prev i, .arroww .carousel-control-next i {
   font-size: 20px;
   margin-right: 2px;
 }
-.carousel-control-prev {
+.arroww .carousel-control-prev {
   left: auto;
   right: 40px;
 }
-.carousel-control-next i {
+.arroww .carousel-control-next i {
   margin-right: -2px;
 }
 .carousel .carousel-indicators {
@@ -1426,15 +1450,113 @@ h2::after {
 }
 
 
+.add_reviews_btn img{
+ margin: 0px 5px;
+}
+.add_reviews_btn{
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 27px;
+text-align: center;
+background: #192A3E;
+color: #FFFFFF;
+}
+.manage_oprcity{
+  opacity: 5;
+}
+
 /*testimonial start here*/
 
 
-
-/*profile description page end here*/
-
+/*profile description Harmony page start here*/
 
 
 
+/*profile description start here*/
+
+.object-fit{
+  object-fit: cover;
+    height: 637px;
+}
+.padding4-left{
+  padding-right: 0px;
+}
+.padding15-bottom{
+  padding-bottom: 15px;
+}
+.modal-dialog {
+    max-width: 1000px;
+    margin: 1.75rem auto;
+}
+
+.no-padding div{
+      width: 250px;
+    background: #111;
+    height: 250px;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.close{
+  padding: 0px;
+}
+.full-img{
+      object-fit: cover;
+    height: 100%;width: 100%;
+}
+
+.remove_padding_for_carousel{
+padding-right: 5px;
+padding-left: 5px;
+}
+
+
+/*profile description end here*/
+
+
+
+/*Policy page start here*/
+.font_size_for_policy p{
+  font-size: 16px;
+}
+.policy_padding{
+  padding: 20px 0px;
+}
+.padding_left_five_px{
+  padding-left: 10px;
+}
+.padding_zero_px{
+  padding: 0px;
+  list-style: none;
+}
+.list_style_disc{
+  list-style: disc;
+}
+.policy_sub_headings{
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 17px;
+line-height: 25px;
+color: #000000;
+}
+.policy_close_btn{
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 18px;
+background: #2C3E50;
+color: #FFFFFF;
+}
+
+
+
+
+/*Policy page end  here*/
 
 
 
@@ -1465,7 +1587,9 @@ h2::after {
 
 
 
-/*filter service provider end here*/
+
+
+
 
 
 /*footer start here */
