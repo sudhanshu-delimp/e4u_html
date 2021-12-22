@@ -1011,17 +1011,27 @@ color: #90A0B7;
 .content_bottom {
   color: white;
   background: rgba(12, 34, 61, 0.5);
-  ;
   position: absolute;
   bottom: -102px;
   left: 0;
   width: 100%;
-  padding: 10px;
   box-sizing: border-box;
   transition: all 0.3s;
 }
 
 .card_box_style:hover .content_bottom {
+  bottom: 0px;
+}
+.card_box_style:hover .five_column_bottom_content {
+  bottom: 0px;
+}
+.card_box_style:hover .seven_column_bottom_content {
+  bottom: 0px;
+}
+.card_box_style:hover .six_column_bottom_content {
+  bottom: 0px;
+}
+.card_box_style:hover .content_bottom_and_padding_all_side_nine_col {
   bottom: 0px;
 }
 
@@ -1044,6 +1054,93 @@ color: #90A0B7;
   color: #FF3C5F;
 }
 
+.seven_column_content_top {
+color: white;
+background: rgba(12, 34, 61, 0.5);
+position: absolute;
+top: 0;
+height: 40px;
+width: 100%;
+padding: 5px;
+box-sizing: border-box;
+transition: all 0.5s;
+}
+.max_width_twenty_px{
+  max-width: 20px;
+}
+.five_column_bottom_content {
+  color: white;
+  background: rgba(12, 34, 61, 0.5);
+  position: absolute;
+  bottom: -84px;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+.six_column_bottom_content {
+  color: white;
+  background: rgba(12, 34, 61, 0.5);
+  position: absolute;
+  bottom: -96px;
+  left: 0;
+  width: 100%;
+  padding: 4px;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+.seven_column_bottom_content {
+  color: white;
+  background: rgba(12, 34, 61, 0.5);
+  position: absolute;
+  bottom: -97px;
+  left: 0;
+  width: 100%;
+  padding: 4px;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+.seven_column_fonts{
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+}
+
+
+
+.nine_column_top_font_size{
+
+}
+
+.nine_column_content_top {
+  color: white;
+  background: rgba(12, 34, 61, 0.5);
+  position: absolute;
+  top: 0;
+  height: 24px;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+.nine_column_top_font_size span{
+  font-size: 9px;
+}
+
+.content_bottom_and_padding_all_side_nine_col{
+  color: white;
+  background: rgba(12, 34, 61, 0.5);
+  position: absolute;
+  bottom: -37px;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.3s;
+  padding: 5px;
+}
+
 
 /*paginaction start here*/
 
@@ -1057,13 +1154,13 @@ color: #90A0B7;
   outline: 0;
   box-shadow: none;
 }
-
 .change_pagination_style .page-link:hover {
   color: white;
   text-decoration: none;
   background-color: #0C223D;
   border-color: #0C223D;
 }
+
 
 
 /*paginaction end here*/
