@@ -85,10 +85,25 @@ font-size: 9px;width: 30%;
     justify-content: center;
 }
 .table-content .theme-color .form-check{
-padding-left:0px;
+padding-left:15px;
+}
+.search-form-bg{
+    width:100%;margin-bottom: 10px;
+}
+.add-new-page-box{
+margin-top: 20px;
+}
+.alert-light {
+padding: 10px;
 }
 
+.alert-light div{
+font-size: 14px;
 }
+
+
+}
+
 
 @media screen and (max-width: 900px) {
 .about-me-box-one {
@@ -110,15 +125,24 @@ padding-left:0px;
   and (min-device-width: 768px) 
   and (max-device-width: 1030px) 
   and (-webkit-min-device-pixel-ratio: 1) {
-
- 
+    .search-form-bg {
+    width: 220px;
+ }
+    .full-width-for-ipad{
+       flex: 0 0 100%;
+    max-width: 100%;
+}
+ .full-width-for-ipad .bothsearch-form {
+    display: flex;
+    justify-content: left;
+}
 
 }
 
 
 
 
-/ Portrait and Landscape /
+ 
 @media only screen 
   and (min-device-width: 834px) 
   and (max-device-width: 1112px)
@@ -131,5 +155,17 @@ padding-left:0px;
     margin-right: 0 !important;
 }
 
+.left-sidebar-bg{
+       flex: 0 0 100%;
+    max-width: 100%;
+}
 
+.right-sidebar-bg{
+       flex: 0 0 100%;
+    max-width: 100%;
+}
+.full-width-for-ipad {
+    flex: none;
+    max-width: fit-content;
+}
 }
