@@ -84,6 +84,10 @@ font-size: 9px;width: 30%;
     display: flex;
     justify-content: center;
 }
+.table-content .theme-color .form-check{
+padding-left:0px;
+}
+
 }
 
 @media screen and (max-width: 900px) {
@@ -98,5 +102,34 @@ font-size: 9px;width: 30%;
     font-size: 35px;
      
 } 
+
+}
+
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1030px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+ 
+
+}
+
+
+
+
+/ Portrait and Landscape /
+@media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 1112px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+ .gap_between_btns{
+    gap: : 0px !important
+ }
+.request-filter-box{
+        padding: 9px !important;
+    margin-right: 0 !important;
+}
+
 
 }
