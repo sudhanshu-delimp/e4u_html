@@ -9,21 +9,23 @@
       <!-- jquery ui cdn -->
       <link rel="stylesheet" href="css/jquery-ui.min.css"/>
       <link rel="stylesheet" href="css/jquery-ui.structure.min.css"/>
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.css">
       <!-- jquery ui cdn -->
       <!-- google fonts -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand&display=swap" rel="stylesheet">
-      <!-- google fonts -->
-      <!-- font awsome -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
-      <link rel="stylesheet" type="text/css" href="css/style.css">
-      <link rel="stylesheet" type="text/css" href="css/shivam-dk-resoponsive.css">
-      
-      <title>filter service provider</title>
+       <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+       <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:ital,wght@0,200;0,400;1,200&display=swap"
+        rel="stylesheet">
+        <!-- google fonts -->
+        <!-- font awsome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/shivam-dk-resoponsive.css">
+      <title>profile description page</title>
    </head>
    <body>
-      <nav class="navbar navbar-expand-lg navbar-light main_bg_color">
+      <section class="mx-auto max_width_for_content">
+        <nav class="navbar navbar-expand-lg navbar-light main_bg_color">
          <div class="container-fluid manage_header_padding">
             <a class="navbar-brand" href="#">
             <img src="img/logo.png" width="172" height="61" class="d-inline-block align-top" alt="">
@@ -31,7 +33,7 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse collapse_menu_top_of_the_content" id="navbarSupportedContent">
                <ul class="navbar-nav mx-auto border_right">
                   <li class="nav-item">
                      <a class="nav-link" href="#">Home</a>
@@ -94,11 +96,14 @@
                         <a class="header_reg_btn" href="#">Register</a>
                      </li>
                   </ul>
-                  <!-- <a class="btn" href="#" role="button">Link</a> -->
                </form>
             </div>
          </div>
       </nav>
+
+
+
+      
    <section class="">
       <div class="container">
          <div class="search_filters">
@@ -145,14 +150,14 @@
                </div>
                
                <div class="fiter_btns">
-                  <div class="display_inline_block mb-1 mr-3">
+                  <div class="display_inline_block mb-1 mr-2">
                      <select class="form_control_with_border form-control-sm" id="">
                            <option>All States</option>
                            <option>Male</option>
                            <option>Female</option>
                      </select>
                   </div>
-                  <div class="display_inline_block mb-1 mr-3">
+                  <div class="display_inline_block mb-1 mr-2">
                      <select class="form_control_with_border form-control-sm" id="">
                            <option>Gender</option>
                            <option>Male</option>
@@ -160,41 +165,51 @@
                      </select>
                   </div>
 
-                  <div class="display_inline_block mb-1 mr-3">
-                     <select class="form_control_with_border form-control-sm" id="">
-                           <option>filter 1</option>
-                           <option>Male</option>
-                           <option>Female</option>
-                     </select>
+                  <div class="display_inline_block mb-1 mr-2">
+                     
+                           <div class="slider-area">
+                        <span class="slider-title">Select Age</span>
+                        <div class="slider-area-wrapper">
+                           <span id="skip-value-lower-age"></span>
+                           <div id="skipstepage" class="slider"></div>
+                           <span id="skip-value-upper-age"></span>
+                        </div>
+                     </div>
+                     
                   </div>
-                  <div class="display_inline_block mb-1 mr-3">
-                     <select class="form_control_with_border form-control-sm" id="">
-                           <option>filter 2</option>
-                           <option>Male</option>
-                           <option>Female</option>
-                     </select>
+               
+
+                  <div class="display_inline_block mb-1 mr-2">
+                     <div class="slider-area">
+                        <span class="slider-title">Select Rate</span>
+                        <div class="slider-area-wrapper">
+                           <span class="d-inline-flex">$<span id="skip-value-lower"></span></span>
+                           <div id="skipstep" class="slider"></div>
+                           <span class="d-inline-flex">$<span id="skip-value-upper"></span></span>
+                        </div>
+                     </div>
                   </div>
-                  <div class="display_inline_block mb-1 mr-3">
+
+                  <div class="display_inline_block mb-1 mr-2">
                      <select class="form_control_with_border form-control-sm" id="">
                            <option>All services</option>
                            <option>Male</option>
                            <option>Female</option>
                      </select>
                   </div>
-                  <div class="display_inline_block mb-1 mr-3">
+                  
+                 
+                  <div class="display_inline_block mb-1 mr-2">
                      <button type="button" class="btn verified_btn_bg_color verified_text_color">
                      <img src="img/protected2.png"> Verified
                   </button>
                   </div>
-                  <div class="display_inline_block mb-1 mr-3">
+                  <div class="display_inline_block mb-1 mr-2">
                      <button type="button" class="btn reset_filter">
                         Apply Filters
                      </button>
                   </div>
-
-                  
-
-
+                   
                </div>
                <div class="service_tags">
                   <div class="row">
@@ -250,7 +265,7 @@
                   </div>
                </div>
             </div>
-         </div>
+          </div>
 
    <!-- ================     service provider start here     ========================= -->
 
@@ -1322,6 +1337,7 @@
       <!--  ==============     9 items column end here  ==================  -->
 
       </div>
+
    </section>
 
 
@@ -1330,7 +1346,7 @@
 
 
 
-<!-- =============       pagination start here            ====================-->
+<!-- ==============        pagination start here            ====================-->
    
 
    <section class="padding_ninty_btm_ninty_px">
@@ -1362,104 +1378,97 @@
 
  <!-- =============       pagination end here            ====================-->
 
+<!-- ==============      footer   start here             ==========================-->
 
-
-
-
-
-
-
-
-
-
-<!-- ===================              footer   start here       ================================-->
-
-      <footer class="footer_bg_color padding_fifty_top_and_btm">
-         <section class="footer_mange_padding">
-            <div class="container-fluid">
-               <div class="row">
-                  <div class="col-md-12">
-                     <a href="#"><img src="img/logo.png" class="img-fluid" alt="logo"></a>
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="col-lg-5 footer_text_color_white">
-                     <h4>Advertising Statement</h4>
-                     <p>This Website permits adults to advertise their companionship to other adults. Escorts4U does not provide a booking service or arrange for meetings between Advertisers and Viewers. We do not act as an intermediary or play any role in any transaction.</p>
-                     <p>Any price indicated in an Advertiser's Profile relates to their time only and nothing else. Any service offered or whatever else that may occur is a mutual decision between consenting adults and is private between them. It is your responsibility to be cognisant of and to comply with the Local Laws.</p>
-                  </div>
-                  <div class="col-lg-3 footer_text_color_white">
-                     <h4>Legal</h4>
-                     <div class="row">
-                        <div class="col-sm-6">
-                           <ul class="list-group footer_list_style_none">
-                              <li><a href="#">Acceptable use Policy</a></li>
-                              <li><a href="#">Copyright Statement</a></li>
-                              <li><a href="#">Covid-19  Statement</a></li>
-                              <li><a href="#">Disclaimer Statement</a></li>
-                              <li><a href="#">Law Enforcement</a></li>
-                           </ul>
+      <footer class="footer_bg_color padding_fifty_top_and_btm ">
+            <section class="footer_mange_padding">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a href="#"><img src="img/logo.png" class="img-fluid" alt="logo"></a>
                         </div>
-                        <div class="col-sm-6">
-                           <ul class="list-group footer_list_style_none">
-                              <li><a href="#">Privacy Policy</a></li>
-                              <li><a href="#">Refund Policy</a></li>
-                              <li><a href="#">Sapm Policy</a></li>
-                              <li><a href="#">Terms & Conditions</a></li>
-                              <li></li>
-                           </ul>
+                    </div>
+                    <div class="row pb-4">
+                        <div class="col-lg-5 col-sm-12 col-12 footer_text_color_white">
+                            <h4>Advertising Statement</h4>
+                            <p>This Website permits adults to advertise their companionship to other adults. Escorts4U does not provide a booking service or arrange for meetings between Advertisers and Viewers. We do not act as an intermediary or play any role in any transaction.</p>
+                            <p>Any price indicated in an Advertiser's Profile relates to their time only and nothing else. Any service offered or whatever else that may occur is a mutual decision between consenting adults and is private between them. It is your responsibility to be cognisant of and to comply with the Local Laws.</p>
                         </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-3 footer_text_color_white">
-                     <h4>Community</h4>
-                     <div class="row">
-                        <div class="col-sm-6">
-                           <ul class="list-group footer_list_style_none">
-                              <li><a href="#">Abbreviations, Icons & Lingo</a></li>
-                              <li><a href="#">Alerts</a></li>
-                              <li><a href="#">Blog</a></li>
-                              <li><a href="#">Contact Us</a></li>
-                              <li><a href="#">Etiquette</a></li>
-                              <li><a href="#">FAQs</a></li>
-                           </ul>
+                        <div class="col-lg-3 col-sm-12 col-12 footer_text_color_white">
+                            <h4>Legal</h4>
+                            <div class="row">
+                                <div class="col-lg-6 col-sm-6 col-6">
+                                    <ul class="list-group footer_list_style_none">
+                                        <li><a href="#">Acceptable use Policy</a></li>
+                                        <li><a href="#">Copyright Statement</a></li>
+                                        <li><a href="#">Covid-19  Statement</a></li>
+                                        <li><a href="#">Disclaimer Statement</a></li>
+                                        <li><a href="#">Law Enforcement</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 col-sm-6 col-6">
+                                    <ul class="list-group footer_list_style_none">
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">Refund Policy</a></li>
+                                        <li><a href="#">Sapm Policy</a></li>
+                                        <li><a href="#">Terms & Conditions</a></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-sm-6">
-                           <ul class="list-group footer_list_style_none">
-                              <li><a href="#">Feedback</a></li>
-                              <li><a href="#">Help for Adverisers</a></li>
-                              <li><a href="#">Help for Agents</a></li>
-                              <li><a href="#">Help for Massage Centers</a></li>
-                              <li><a href="#">Help for Viewers</a></li>
-                           </ul>
+                        <div class="col-lg-3 col-sm-12 col-12 footer_text_color_white">
+                            <h4>Community</h4>
+                            <div class="row">
+                                <div class="col-lg-7 col-sm-6 col-6">
+                                    <ul class="list-group footer_list_style_none">
+                                        <li><a href="#">Abbreviations, Icons & Lingo</a></li>
+                                        <li><a href="#">Alerts</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                        <li><a href="#">Etiquette</a></li>
+                                        <li><a href="#">FAQs</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-5 col-sm-6 col-6">
+                                    <ul class="list-group footer_list_style_none">
+                                        <li><a href="#">Feedback</a></li>
+                                        <li><a href="#">Help for Adverisers</a></li>
+                                        <li><a href="#">Help for Agents</a></li>
+                                        <li><a href="#">Help for Massage Centers</a></li>
+                                        <li><a href="#">Help for Viewers</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-1">
-                     <ul class="list-group footer_list_style_none">
-                        <li><a class="footer_reg_btn" href="#">Register</a></li>
-                        <li><a class="footer_login_btn primery_color" href="#">login</a></li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="footer_copy_right">
-                  <div class="row">
-                     <div class="col-lg-9 col-md-9 footer_text_color_white">
-                        &copy; E4U . 2022
-                     </div>
-                     <div class="col-lg-3 col-md-3">
-                        <span class="footer_text_color_white">Follow us:</span>
-                        <ul class="footer_social_icons">
-                           <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                           <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                           <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-      </footer>
+                        <div class="col-12 col-md-12 col-sm-12 col-lg-1 dk-right">
+                            <ul class="footer_list_style_none footerbtn-flex mt-lg-5">
+                                <li><a class="footer_reg_btn" href="#">Register</a></li>
+                                <li><a class="footer_login_btn primery_color" href="#">Login</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer_copy_right">
+                        <div class="row">
+                            <div class="col-5 footer_text_color_white ">
+                                <div class="dk-right">&copy; E4U . 2022</div>
+                            </div>
+                            <div class="col-7">
+                                <div class="dk-center">
+                                    <span class="footer_text_color_white">Follow us:</span>
+                                    <ul class="footer_social_icons">
+                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+     </section>
 
 <!-- ===================              footer   end here       ================================-->
 
@@ -1467,9 +1476,77 @@
 
 
       <script src="js/jquery-3.6.0.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
       <script src="js/popper.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script src="js/jquery-ui.min.js"></script>
       <script type="text/javascript" src="js/jqueryuijs.js"></script>
+
+      <script>
+   var skipSliderage = document.getElementById("skipstepage");
+var skipValuesage = [
+   document.getElementById("skip-value-lower-age"),
+   document.getElementById("skip-value-upper-age")
+];
+
+noUiSlider.create(skipSliderage, {
+  start: [0, 30],
+   connect: true,
+   behaviour: "drag",
+   step: 1,
+   range: {
+      min: 18,
+      max: 60
+   },
+   format: {
+      from: function (value) {
+         return parseInt(value);
+      },
+      to: function (value) {
+         return parseInt(value);
+      }
+   }
+});
+
+skipSliderage.noUiSlider.on("update", function (values, handle) {
+   skipValuesage[handle].innerHTML = values[handle];
+});
+
+</script> 
+
+
+
+<script>
+   var skipSlider = document.getElementById("skipstep");
+var skipValues = [
+   document.getElementById("skip-value-lower"),
+   document.getElementById("skip-value-upper")
+];
+
+noUiSlider.create(skipSlider, {
+   start: [0, 200],
+   connect: true,
+   behaviour: "drag",
+   step: 1,
+   range: {
+      min: 150,
+      max: 300
+   },
+   format: {
+      from: function (value) {
+         return parseInt(value);
+      },
+      to: function (value) {
+         return parseInt(value);
+      }
+   }
+});
+
+skipSlider.noUiSlider.on("update", function (values, handle) {
+   skipValues[handle].innerHTML = values[handle];
+});
+
+</script>
+
    </body>
 </html>
