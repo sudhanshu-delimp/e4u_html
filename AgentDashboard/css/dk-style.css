@@ -1269,3 +1269,24 @@ background-color:green;
 .page-published{
     color:red;
 }
+
+
+
+
+.select2-selection .select2-selection__rendered{
+    color: #6e707e !important;
+    font-size: .875rem;
+}
+.select2-container--default .select2-selection--single {
+ 
+    border: 1px solid #d1d3e2 !important;
+ 
+}
+
+
+.heading-with-btn{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
