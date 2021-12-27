@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>My Cart</title>
+
+    <!-- Custom fonts for this template-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:ital,wght@0,200;0,400;0,500;1,200&display=swap"
+        rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="css/dk-style.css" rel="stylesheet"> <link href="css/dk-responsive.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="sticky-top navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <img src="img/logo.svg" alt="">
+            </a>
+
+            <!-- Divider -->
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10 0.720703V6.7207H18V0.720703H10ZM10 18.7207H18V8.7207H10V18.7207ZM0 18.7207H8V12.7207H0V18.7207ZM0 10.7207H8V0.720703H0V10.7207Z"
+                            fill="white" />
+                    </svg>
+                    <span>Dashboard</span></a>
+            </li>
+
+            <!-- Divider -->
+
+            <!-- Heading -->
+
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8 0.720703C9.06087 0.720703 10.0783 1.14213 10.8284 1.89228C11.5786 2.64242 12 3.65984 12 4.7207C12 5.78157 11.5786 6.79899 10.8284 7.54913C10.0783 8.29928 9.06087 8.7207 8 8.7207C6.93913 8.7207 5.92172 8.29928 5.17157 7.54913C4.42143 6.79899 4 5.78157 4 4.7207C4 3.65984 4.42143 2.64242 5.17157 1.89228C5.92172 1.14213 6.93913 0.720703 8 0.720703ZM8 10.7207C12.42 10.7207 16 12.5107 16 14.7207V16.7207H0V14.7207C0 12.5107 3.58 10.7207 8 10.7207Z"
+                            fill="#C2CFE0" />
+                    </svg>
+
+                    <span>My Account</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="#">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17.7 10.0707L16.7 11.0707L14.65 9.0207L15.65 8.0207C15.86 7.8107 16.21 7.8107 16.42 8.0207L17.7 9.3007C17.91 9.5107 17.91 9.8607 17.7 10.0707ZM8 15.6607L14.06 9.6007L16.11 11.6507L10.06 17.7207H8V15.6607ZM8 10.7207C3.58 10.7207 0 12.5107 0 14.7207V16.7207H6V14.8307L10 10.8307C9.34 10.7507 8.67 10.7207 8 10.7207ZM8 0.720703C6.93913 0.720703 5.92172 1.14213 5.17157 1.89228C4.42143 2.64242 4 3.65984 4 4.7207C4 5.78157 4.42143 6.79899 5.17157 7.54913C5.92172 8.29928 6.93913 8.7207 8 8.7207C9.06087 8.7207 10.0783 8.29928 10.8284 7.54913C11.5786 6.79899 12 5.78157 12 4.7207C12 3.65984 11.5786 2.64242 10.8284 1.89228C10.0783 1.14213 9.06087 0.720703 8 0.720703Z"
+                                    fill="#C2CFE0" />
+                            </svg>
+
+                            Edit my account</a>
+                        <a class="collapse-item" href="#">
+                            <svg width="20" height="11" viewBox="0 0 20 11" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4 4.7207C4.53043 4.7207 5.03914 4.93142 5.41421 5.30649C5.78929 5.68156 6 6.19027 6 6.7207V10.7207H2C1.46957 10.7207 0.960859 10.51 0.585786 10.1349C0.210714 9.75984 0 9.25114 0 8.7207V6.7207C0 6.19027 0.210714 5.68156 0.585786 5.30649C0.960859 4.93142 1.46957 4.7207 2 4.7207H4ZM2 6.7207V8.7207H4V6.7207H2ZM18 6.7207V8.7207H20V10.7207H18C17.4696 10.7207 16.9609 10.51 16.5858 10.1349C16.2107 9.75984 16 9.25114 16 8.7207V6.7207C16 6.19027 16.2107 5.68156 16.5858 5.30649C16.9609 4.93142 17.4696 4.7207 18 4.7207H20V6.7207H18ZM10 0.720703V4.7207H12C12.5304 4.7207 13.0391 4.93142 13.4142 5.30649C13.7893 5.68156 14 6.19027 14 6.7207V8.7207C14 9.25114 13.7893 9.75984 13.4142 10.1349C13.0391 10.51 12.5304 10.7207 12 10.7207H10C9.46957 10.7207 8.96086 10.51 8.58579 10.1349C8.21071 9.75984 8 9.25114 8 8.7207V0.720703H10ZM10 8.7207H12V6.7207H10V8.7207Z"
+                                    fill="#C2CFE0" />
+                            </svg>
+
+                            Change password</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#Escorts"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <svg width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14 10.7207C11.3 10.7207 6 12.0207 6 14.7207V16.7207H22V14.7207C22 12.0207 16.7 10.7207 14 10.7207ZM14 8.7207C15.0609 8.7207 16.0783 8.29928 16.8284 7.54913C17.5786 6.79899 18 5.78157 18 4.7207C18 3.65984 17.5786 2.64242 16.8284 1.89228C16.0783 1.14213 15.0609 0.720703 14 0.720703C12.9391 0.720703 11.9217 1.14213 11.1716 1.89228C10.4214 2.64242 10 3.65984 10 4.7207C10 5.78157 10.4214 6.79899 11.1716 7.54913C11.9217 8.29928 12.9391 8.7207 14 8.7207ZM4 11.7207L3.4 11.2207C1.4 9.3207 0 8.1207 0 6.6207C0 5.4207 1 4.4207 2.2 4.4207C2.9 4.4207 3.6 4.7207 4 5.2207C4.4 4.7207 5.1 4.4207 5.8 4.4207C7 4.4207 8 5.3207 8 6.6207C8 8.1207 6.6 9.3207 4.6 11.2207L4 11.7207Z"
+                            fill="#C2CFE0" />
+                    </svg>
+
+                    <span>My Escorts</span>
+                </a>
+                <div id="Escorts" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="#">
+                            <svg width="19" height="17" viewBox="0 0 19 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5 9.7207V7.7207H19V9.7207H5ZM5 15.7207V13.7207H19V15.7207H5ZM5 3.7207V1.7207H19V3.7207H5ZM1 4.7207V1.7207H0V0.720703H2V4.7207H1ZM0 13.7207V12.7207H3V16.7207H0V15.7207H2V15.2207H1V14.2207H2V13.7207H0ZM2.25 6.7207C2.44891 6.7207 2.63968 6.79972 2.78033 6.94037C2.92098 7.08103 3 7.27179 3 7.4707C3 7.6707 2.92 7.8607 2.79 7.9907L1.12 9.7207H3V10.7207H0V9.8007L2 7.7207H0V6.7207H2.25Z"
+                                    fill="#C2CFE0" />
+                            </svg>
+
+                            List of escorts</a>
+                        <a class="collapse-item" href="#">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.00023 3.7208H12.0002L15.2902 0.420798C15.3832 0.32707 15.4938 0.252676 15.6156 0.201907C15.7375 0.151138 15.8682 0.125 16.0002 0.125C16.1322 0.125 16.2629 0.151138 16.3848 0.201907C16.5067 0.252676 16.6173 0.32707 16.7102 0.420798L19.2902 3.0108C19.4765 3.19816 19.581 3.45161 19.581 3.7158C19.581 3.97998 19.4765 4.23344 19.2902 4.4208L17.0002 6.7208H9.00023V8.7208C9.00023 8.98602 8.89487 9.24037 8.70733 9.42791C8.5198 9.61544 8.26544 9.7208 8.00023 9.7208C7.73501 9.7208 7.48066 9.61544 7.29312 9.42791C7.10558 9.24037 7.00023 8.98602 7.00023 8.7208V5.7208C7.00023 5.19037 7.21094 4.68166 7.58601 4.30658C7.96109 3.93151 8.46979 3.7208 9.00023 3.7208ZM3.00023 8.7208V12.7208L0.710226 15.0108C0.523975 15.1982 0.419434 15.4516 0.419434 15.7158C0.419434 15.98 0.523975 16.2334 0.710226 16.4208L3.29023 19.0108C3.38319 19.1045 3.49379 19.1789 3.61565 19.2297C3.73751 19.2805 3.86821 19.3066 4.00023 19.3066C4.13224 19.3066 4.26294 19.2805 4.3848 19.2297C4.50666 19.1789 4.61726 19.1045 4.71023 19.0108L9.00023 14.7208H13.0002C13.2654 14.7208 13.5198 14.6154 13.7073 14.4279C13.8949 14.2404 14.0002 13.986 14.0002 13.7208V12.7208H15.0002C15.2654 12.7208 15.5198 12.6154 15.7073 12.4279C15.8949 12.2404 16.0002 11.986 16.0002 11.7208V10.7208H17.0002C17.2654 10.7208 17.5198 10.6154 17.7073 10.4279C17.8949 10.2404 18.0002 9.98602 18.0002 9.7208V8.7208H11.0002V9.7208C11.0002 10.2512 10.7895 10.7599 10.4144 11.135C10.0394 11.5101 9.53066 11.7208 9.00023 11.7208H7.00023C6.46979 11.7208 5.96109 11.5101 5.58601 11.135C5.21094 10.7599 5.00023 10.2512 5.00023 9.7208V6.7208L3.00023 8.7208Z"
+                                    fill="#C2CFE0" />
+                            </svg>
+
+                            Agent request</a>
+                        <a class="collapse-item" href="#">
+                            <svg width="16" height="21" viewBox="0 0 16 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 3.7207V2.7207C12 2.19027 11.7893 1.68156 11.4142 1.30649C11.0391 0.931417 10.5304 0.720703 10 0.720703H6C5.46957 0.720703 4.96086 0.931417 4.58579 1.30649C4.21071 1.68156 4 2.19027 4 2.7207V3.7207C2.93913 3.7207 1.92172 4.14213 1.17157 4.89228C0.421427 5.64242 0 6.65984 0 7.7207V18.7207C0 19.2511 0.210714 19.7598 0.585786 20.1349C0.960859 20.51 1.46957 20.7207 2 20.7207H14C14.5304 20.7207 15.0391 20.51 15.4142 20.1349C15.7893 19.7598 16 19.2511 16 18.7207V7.7207C16 6.65984 15.5786 5.64242 14.8284 4.89228C14.0783 4.14213 13.0609 3.7207 12 3.7207ZM6 2.7207H10V3.7207H6V2.7207ZM8 7.7207L10 9.7207L8 11.7207L6 9.7207L8 7.7207ZM14 18.7207H2V14.7207H4V16.7207H5V14.7207H14V18.7207ZM14 13.7207H2V7.7207C2 7.19027 2.21071 6.68156 2.58579 6.30649C2.96086 5.93142 3.46957 5.7207 4 5.7207H12C12.5304 5.7207 13.0391 5.93142 13.4142 6.30649C13.7893 6.68156 14 7.19027 14 7.7207V13.7207Z"
+                                    fill="#C2CFE0" />
+                            </svg>
+
+                            Tour</a>
+                        <a class="collapse-item" href="#">
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.5 8.3507C13.31 5.5607 12.18 2.8407 10.06 0.720703C7.92 2.8607 6.74 5.5807 6.5 8.3507C7.79 9.0307 8.97 9.9107 10 10.9807C11.03 9.9207 12.21 9.0407 13.5 8.3507ZM10 14.1707C7.85 10.8907 4.18 8.7207 0 8.7207C0 18.7207 9.32 20.6107 10 20.7207C10.68 20.6007 20 18.7207 20 8.7207C15.82 8.7207 12.15 10.8907 10 14.1707Z"
+                                    fill="#C2CFE0" />
+                            </svg>
+
+                            Massage Escort</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#marketing"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8 0.720703C3.58 0.720703 0 2.5107 0 4.7207C0 6.9307 3.58 8.7207 8 8.7207C12.42 8.7207 16 6.9307 16 4.7207C16 2.5107 12.42 0.720703 8 0.720703ZM0 6.7207V9.7207C0 11.9307 3.58 13.7207 8 13.7207C12.42 13.7207 16 11.9307 16 9.7207V6.7207C16 8.9307 12.42 10.7207 8 10.7207C3.58 10.7207 0 8.9307 0 6.7207ZM0 11.7207V14.7207C0 16.9307 3.58 18.7207 8 18.7207C12.42 18.7207 16 16.9307 16 14.7207V11.7207C16 13.9307 12.42 15.7207 8 15.7207C3.58 15.7207 0 13.9307 0 11.7207Z"
+                            fill="white" />
+                    </svg>
+
+                    <span>Marketing</span>
+                </a>
+                <div id="marketing" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="#">
+                            <svg width="19" height="17" viewBox="0 0 19 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5 9.7207V7.7207H19V9.7207H5ZM5 15.7207V13.7207H19V15.7207H5ZM5 3.7207V1.7207H19V3.7207H5ZM1 4.7207V1.7207H0V0.720703H2V4.7207H1ZM0 13.7207V12.7207H3V16.7207H0V15.7207H2V15.2207H1V14.2207H2V13.7207H0ZM2.25 6.7207C2.44891 6.7207 2.63968 6.79972 2.78033 6.94037C2.92098 7.08103 3 7.27179 3 7.4707C3 7.6707 2.92 7.8607 2.79 7.9907L1.12 9.7207H3V10.7207H0V9.8007L2 7.7207H0V6.7207H2.25Z"
+                                    fill="#C2CFE0" />
+                            </svg>
+
+                            List of escorts</a>
+
+
+
+                    </div>
+                </div>
+            </li>
+            <!-- Nav Item - Utilities Collapse Menu -->
+            <!-- <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                    aria-expanded="true" aria-controls="collapseUtilities">
+                    <i class="fas fa-fw fa-wrench"></i>
+                    <span>Utilities</span>
+                </a>
+                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Custom Utilities:</h6>
+                        <a class="collapse-item" href="utilities-color.html">Colors</a>
+                        <a class="collapse-item" href="utilities-border.html">Borders</a>
+                        <a class="collapse-item" href="utilities-animation.html">Animations</a>
+                        <a class="collapse-item" href="utilities-other.html">Other</a>
+                    </div>
+                </div>
+            </li> -->
+
+            <!-- Divider -->
+
+            <!-- Heading -->
+            <!-- <div class="sidebar-heading">
+                Addons
+            </div> -->
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <!-- <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                    aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Pages</span>
+                </a>
+                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Login Screens:</h6>
+                        <a class="collapse-item" href="login.html">Login</a>
+                        <a class="collapse-item" href="register.html">Register</a>
+                        <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
+                        <div class="collapse-divider"></div>
+                        <h6 class="collapse-header">Other Pages:</h6>
+                        <a class="collapse-item" href="404.html">404 Page</a>
+                        <a class="collapse-item" href="blank.html">Blank Page</a>
+                    </div>
+                </div>
+            </li> -->
+
+            <!-- Nav Item - Charts -->
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="charts.html">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Charts</span></a>
+            </li>
+
+            Nav Item - Tables -->
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="tables.html">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Tables</span></a>
+            </li> -->
+
+            <!-- Divider -->
+
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="sticky-top navbar navbar-expand navbar-light bg-white topbar mb-4 shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Topbar Search -->
+                    <form
+                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group dk-border-radius">
+                            <div class="input-group-append">
+                                <button class="btn" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                            <input type="text" class="form-control border-0 small" placeholder="Enter keywords..."
+                                aria-label="Search" aria-describedby="basic-addon2">
+
+                        </div>
+                    </form>
+
+                    <!-- Topbar Navbar -->
+                    <div class="navbar-nav ml-auto">
+
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small"
+                                            placeholder="Search for..." aria-label="Search"
+                                            aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+
+
+
+                        <!-- Nav Item - Alerts -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="top-icon-bg fas fa-bell fa-fw"></i>
+                                <!-- Counter - Alerts -->
+                                <span class="badge badge-danger badge-counter"> </span>
+                            </a>
+                            <!-- Dropdown - Alerts -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header">
+                                    Alerts Center
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-primary">
+                                            <i class="fas fa-file-alt text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 12, 2019</div>
+                                        <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-success">
+                                            <i class="fas fa-donate text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 7, 2019</div>
+                                        $290.29 has been deposited into your account!
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-warning">
+                                            <i class="fas fa-exclamation-triangle text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 2, 2019</div>
+                                        Spending Alert: We've noticed unusually high spending for your account.
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                            </div>
+                        </li>
+
+
+
+                        <div class=" d-none d-sm-block"></div>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <!-- <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span> -->
+                                <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Profile
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Settings
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Activity Log
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Logout
+                                </a>
+                            </div>
+                        </li>
+
+                        </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <div class="container-fluid">
+
+                    <!--middle content-->
+                    <div class="row">
+
+                        <div class="col-sm-12 col-md-12 col-lg-12 ">
+                            <!-- Begin Page Content -->
+                            <div class="container-fluid" style="padding: 0px 0px;">
+
+                                <!-- Page Heading -->
+                                <div class="row">
+                                    <div class="col d-sm-flex align-items-center justify-content-between mb-4">
+                                        <h1 class="h3 mb-0 text-gray-800 font-weight-500">My Cart</h1>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex justify-content-end">
+                                            <div class="mx-3"><img src="img/box.svg" alt=""></div>
+                                            <div class="mx-3"><img src="img/car.svg" alt=""></div>
+                                            <div class="mx-3 cart-css"><span class="circle-number"> 5</span><img
+                                                    src="img/cart.svg" alt="" class=""></div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <p><a href="#"><img src="img/arrow.svg" alt=""> Back to Product page</a></p>
+
+
+
+                            </div>
+                            <!-- /.container-fluid --><br>
+                            <div class="row">
+
+                                <div class="col-sm-12 col-md-12 col-lg-12">
+                                    <div class="table-responsive-xl">
+                                        <table class="table">
+                                            <thead class="table-bg">
+                                                <tr>
+                                                    <th scope="col">
+                                                        <input class="" type="checkbox" value="" id="flexCheckDefault">
+                                                        <span class="pl-4 ">Product</span>
+                                                    </th>
+                                                    <th scope="col">Brand</th>
+
+                                                    <th scope="col">Unit Price</th>
+                                                    <th scope="col">Qty</th>
+                                                    <th scope="col">Location</th>
+                                                    <th scope="col">Total
+                                                    </th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody class="table-content">
+
+                                                <tr class="row-color">
+                                                    <td class="theme-color">
+                                                        <div class="form-check d-flex align-items-center">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                            <label class="form-check-label"
+                                                                for="flexCheckDefault"></label>
+                                                            <img src="img/man.png" alt="" class="pl-2 ">
+                                                            <span>Kathryn Murphy</span>
+                                                        </div>
+
+                                                    </td>
+
+                                                    <td class="theme-color">Brand 1</td>
+
+
+                                                    <td class="theme-color">
+                                                        $100
+                                                    </td>
+                                                    <td class="theme-color ">
+                                                        <form action="">
+                                                            <select name="cars" id="cars">
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                            </select>
+
+
+                                                        </form>
+                                                    </td>
+                                                    <td class="theme-color"> SA</td>
+                                                    <td class="theme-color"> Totsl</td>
+
+                                                </tr>
+
+                                                <tr class="row-color">
+                                                    <td class="theme-color">
+                                                        <div class="form-check d-flex align-items-center">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                            <label class="form-check-label"
+                                                                for="flexCheckDefault"></label>
+                                                            <img src="img/man.png" alt="" class="pl-2 ">
+                                                             <span>Kathryn Murphy</span>
+                                                        </div>
+
+                                                    </td>
+
+                                                    <td class="theme-color">Brand 1</td>
+
+
+                                                    <td class="theme-color">
+                                                        $100
+                                                    </td>
+                                                    <td class="theme-color ">
+                                                        <form action="">
+                                                            <select name="cars" id="cars">
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                            </select>
+
+
+                                                        </form>
+                                                    </td>
+                                                    <td class="theme-color"> SA</td>
+                                                    <td class="theme-color"> Totsl</td>
+
+                                                </tr>
+
+                                                <tr class="total-bg">
+                                                    <td class="theme-color">
+                                                        Total All
+ 
+                                                    </td>
+
+                                                    <td class="theme-color"> </td>
+                                                    <td class="theme-color"> </td>
+                                                    <td class="theme-color"> </td>
+                                                    <td class="theme-color qty">
+
+                                                    </td>
+                                                    <td class="theme-color"> $ 160.00</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="6">
+                                                        <div class="d-flex justify-content-end mr-0 three-btn">
+
+                                                            <button type="button"
+                                                                class="mx-2 bulk-btn yellow-btn">Checkout now</button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--middle content end here-->
+                        <!--right side bar start from here-->
+
+
+                    </div>
+
+
+                    <!--right side bar end-->
+                </div>
+
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span> </span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
+
+</body>
+
+</html>
