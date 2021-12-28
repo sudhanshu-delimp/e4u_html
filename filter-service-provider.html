@@ -9,7 +9,6 @@
       <!-- jquery ui cdn -->
       <link rel="stylesheet" href="css/jquery-ui.min.css"/>
       <link rel="stylesheet" href="css/jquery-ui.structure.min.css"/>
-      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.css">
       <!-- jquery ui cdn -->
       <!-- google fonts -->
        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -21,10 +20,10 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/shivam-dk-resoponsive.css">
-      <title>filter service provider</title>
+      <title>Header footer</title>
    </head>
    <body>
-      <section class="mx-auto max_width_for_content">
+    <section class="mx-auto max_width_for_content">
         <nav class="navbar navbar-expand-lg navbar-light main_bg_color">
          <div class="container-fluid manage_header_padding">
             <a class="navbar-brand" href="#">
@@ -38,7 +37,7 @@
                   <li class="nav-item">
                      <a class="nav-link" href="#">Home</a>
                   </li>
-                  <li class="nav-item dropdown">
+                  <li class="nav-item dropdown custome_toggle_icon_on_blue_menu">
                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                      Find Escort
                      </a>
@@ -52,7 +51,7 @@
                   <!-- <li class="nav-item">
                      <a class="nav-link" href="#">Find Escort</a>
                      </li> -->
-                  <li class="nav-item dropdown">
+                  <li class="nav-item dropdown custome_toggle_icon_on_blue_menu">
                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                      Find Massage Center
                      </a>
@@ -65,7 +64,7 @@
                </ul>
                <div class="nav_center_line">|</div>
                <ul class="navbar-nav mx-auto">
-                  <li class="nav-item dropdown">
+                  <li class="nav-item dropdown custome_toggle_icon_on_blue_menu">
                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                      About
                      </a>
@@ -73,7 +72,7 @@
                         <a class="dropdown-item" href="#">demo</a>
                      </div>
                   </li>
-                  <li class="nav-item dropdown">
+                  <li class="nav-item dropdown custome_toggle_icon_on_blue_menu">
                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                      Concierge
                      </a>
@@ -151,14 +150,14 @@
                
                <div class="fiter_btns">
                   <div class="display_inline_block mb-1 mr-2">
-                     <select class="form_control_with_border form-control-sm" id="">
+                     <select class="custome_form_control_border_radus padding_five_px" id="">
                            <option>All States</option>
                            <option>Male</option>
                            <option>Female</option>
                      </select>
                   </div>
                   <div class="display_inline_block mb-1 mr-2">
-                     <select class="form_control_with_border form-control-sm" id="">
+                     <select class="custome_form_control_border_radus padding_five_px" id="">
                            <option>Gender</option>
                            <option>Male</option>
                            <option>Female</option>
@@ -169,7 +168,7 @@
                      
                            <div class="slider-area">
                         <span class="slider-title">Select Age</span>
-                        <div class="slider-area-wrapper">
+                        <div class="slider-area-wrapper-for-age">
                            <span id="skip-value-lower-age"></span>
                            <div id="skipstepage" class="slider"></div>
                            <span id="skip-value-upper-age"></span>
@@ -182,7 +181,7 @@
                   <div class="display_inline_block mb-1 mr-2">
                      <div class="slider-area">
                         <span class="slider-title">Select Rate</span>
-                        <div class="slider-area-wrapper">
+                        <div class="slider-area-wrapper-for-price">
                            <span class="d-inline-flex">$<span id="skip-value-lower"></span></span>
                            <div id="skipstep" class="slider"></div>
                            <span class="d-inline-flex">$<span id="skip-value-upper"></span></span>
@@ -191,7 +190,7 @@
                   </div>
 
                   <div class="display_inline_block mb-1 mr-2">
-                     <select class="form_control_with_border form-control-sm" id="">
+                     <select class="custome_form_control_border_radus padding_five_px with_eight_em" id="">
                            <option>All services</option>
                            <option>Male</option>
                            <option>Female</option>
@@ -219,7 +218,7 @@
                      <div class="col-md-7">
 
                      <div class="display_inline_block mb-1 mr-3">
-                     <select class="form_control_with_border form-control-sm" id="">
+                     <select class="custome_form_control_border_radus padding_five_px" id="">
                            <option>Fun Stuff - On you</option>
                            <option>Male</option>
                            <option>Female</option>
@@ -227,21 +226,23 @@
                   </div>
 
                         <div class="display_inline_block mb-1 mr-3">
-                     <select class="form_control_with_border form-control-sm" id="">
+                     <select class="custome_form_control_border_radus padding_five_px" id="">
                            <option>Fun Stuff - On you</option>
                            <option>Male</option>
                            <option>Female</option>
                      </select>
                   </div>
                         <div class="display_inline_block mb-1 mr-3">
-                     <select class="form_control_with_border form-control-sm" id="">
+                     <select class="custome_form_control_border_radus padding_five_px" id="">
                            <option>Fun Stuff - On you</option>
                            <option>Male</option>
                            <option>Female</option>
                      </select>
                   </div>
                      </div>
-                     <div class="col-md-2">Clear Tags</div>
+                     <div class="col-md-2">
+                        <span class="text_decoration_under_line">Clear Tags</span>
+                     </div>
                   </div>
                   <div class="row">
                      <div class="col-md-12">
@@ -249,10 +250,6 @@
                         <ul>
                            <li class="seleceted_service_text_and_icon">
                               <p>Massage Thai</p>
-                              <i class="fa fa-times-circle-o" aria-hidden="true"></i>
-                           </li>
-                           <li class="seleceted_service_text_and_icon">
-                              <p>Happy Ending</p>
                               <i class="fa fa-times-circle-o" aria-hidden="true"></i>
                            </li>
                            <li class="seleceted_service_text_and_icon">
@@ -292,7 +289,7 @@
                         <span class="add_to_favrate"><i class="fa fa-heart" aria-hidden="true"></i></span>
                      </div>
                      <div class="five_column_bottom_content">
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between five_column_fonts">
                               <span>Perth- 27</span>
                               <span class="give_rating_after_get_servive">
                               <i class="fa fa-star" aria-hidden="true"></i>
@@ -302,22 +299,22 @@
                               <i class="fa fa-star" aria-hidden="true"></i>                              
                               </span>
                            </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between five_column_fonts">
                               <span>Price:</span>
                               <span>From $250 / hr</span>
                            </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between five_column_fonts">
                               <span>Services:</span>
                               <span>
                                  <img src="img/aerodownicon.svg">
                                  <img src="img/upaeroicon.svg">
                               </span>
                            </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between five_column_fonts">
                               <span>Gender:</span>
                               <span>Female</span>
                            </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between five_column_fonts">
                               <span>Available to:</span>
                               <span>
                                  <img src="img/male-user.svg">
@@ -339,7 +336,7 @@
                         <span class="add_to_favrate"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
                      </div>
                      <div class="five_column_bottom_content">
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between five_column_fonts">
                               <span>Perth- 27</span>
                               <span class="give_rating_after_get_servive">
                               <i class="fa fa-star-o" aria-hidden="true"></i>
@@ -349,22 +346,22 @@
                               <i class="fa fa-star-o" aria-hidden="true"></i>
                               </span>
                            </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between five_column_fonts">
                               <span>Price:</span>
                               <span>From $250 / hr</span>
                            </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between five_column_fonts">
                               <span>Services:</span>
                               <span>
                                  <img src="img/aerodownicon.svg">
                                  <img src="img/upaeroicon.svg">
                               </span>
                            </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between five_column_fonts">
                               <span>Gender:</span>
                               <span>Female</span>
                            </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between five_column_fonts">
                               <span>Available to:</span>
                               <span>
                                  <img src="img/male-user.svg">
@@ -386,7 +383,7 @@
                         <span class="add_to_favrate"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
                      </div>
                      <div class="five_column_bottom_content">
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between five_column_fonts">
                               <span>Perth- 27</span>
                               <span class="give_rating_after_get_servive">
                               <i class="fa fa-star-o" aria-hidden="true"></i>
@@ -396,22 +393,22 @@
                               <i class="fa fa-star-o" aria-hidden="true"></i>
                               </span>
                            </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between five_column_fonts">
                               <span>Price:</span>
                               <span>From $250 / hr</span>
                            </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between five_column_fonts">
                               <span>Services:</span>
                               <span>
                                  <img src="img/aerodownicon.svg">
                                  <img src="img/upaeroicon.svg">
                               </span>
                            </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between five_column_fonts">
                               <span>Gender:</span>
                               <span>Female</span>
                            </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between five_column_fonts">
                               <span>Available to:</span>
                               <span>
                                  <img src="img/male-user.svg">
@@ -433,7 +430,7 @@
                         <span class="add_to_favrate"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
                      </div>
                      <div class="five_column_bottom_content">
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between five_column_fonts">
                               <span>Perth- 27</span>
                               <span class="give_rating_after_get_servive">
                               <i class="fa fa-star-o" aria-hidden="true"></i>
@@ -443,22 +440,22 @@
                               <i class="fa fa-star-o" aria-hidden="true"></i>
                               </span>
                            </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between five_column_fonts">
                               <span>Price:</span>
                               <span>From $250 / hr</span>
                            </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between five_column_fonts">
                               <span>Services:</span>
                               <span>
                                  <img src="img/aerodownicon.svg">
                                  <img src="img/upaeroicon.svg">
                               </span>
                            </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between five_column_fonts">
                               <span>Gender:</span>
                               <span>Female</span>
                            </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between five_column_fonts">
                               <span>Available to:</span>
                               <span>
                                  <img src="img/male-user.svg">
@@ -480,7 +477,7 @@
                         <span class="add_to_favrate"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
                      </div>
                      <div class="five_column_bottom_content">
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between five_column_fonts">
                               <span>Perth- 27</span>
                               <span class="give_rating_after_get_servive">
                               <i class="fa fa-star-o" aria-hidden="true"></i>
@@ -490,22 +487,22 @@
                               <i class="fa fa-star-o" aria-hidden="true"></i>
                               </span>
                            </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between five_column_fonts">
                               <span>Price:</span>
                               <span>From $250 / hr</span>
                            </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between five_column_fonts">
                               <span>Services:</span>
                               <span>
                                  <img src="img/aerodownicon.svg">
                                  <img src="img/upaeroicon.svg">
                               </span>
                            </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between five_column_fonts">
                               <span>Gender:</span>
                               <span>Female</span>
                            </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between five_column_fonts">
                               <span>Available to:</span>
                               <span>
                                  <img src="img/male-user.svg">
@@ -535,7 +532,7 @@
                         <span class="add_to_favrate"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
                      </div>
                      <div class="six_column_bottom_content">
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between six_column_fonts">
                               <span>Perth- 27</span>
                               <span class="give_rating_after_get_servive">
                               <i class="fa fa-star-o" aria-hidden="true"></i>
@@ -545,24 +542,24 @@
                               <i class="fa fa-star-o" aria-hidden="true"></i>
                               </span>
                            </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between six_column_fonts">
                               <span>Price:</span>
                               <span>From $250 / hr</span>
                            </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between six_column_fonts">
                               <span>Services:</span>
-                              <span>
+                              <span class="image_height_width_for_col_six">
                                  <img src="img/aerodownicon.svg">
                                  <img src="img/upaeroicon.svg">
                               </span>
                            </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between six_column_fonts">
                               <span>Gender:</span>
                               <span>Female</span>
                            </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between six_column_fonts">
                               <span>Available to:</span>
-                              <span>
+                              <span class="image_height_width_for_col_six">
                                  <img src="img/male-user.svg">
                                  <img src="img/woman-avatar.svg">
                                  <img src="img/Vector.svg">
@@ -582,7 +579,7 @@
                         <span class="add_to_favrate"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
                      </div>
                      <div class="six_column_bottom_content">
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between six_column_fonts">
                               <span>Perth- 27</span>
                               <span class="give_rating_after_get_servive">
                               <i class="fa fa-star-o" aria-hidden="true"></i>
@@ -592,24 +589,24 @@
                               <i class="fa fa-star-o" aria-hidden="true"></i>
                               </span>
                            </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between six_column_fonts">
                               <span>Price:</span>
                               <span>From $250 / hr</span>
                            </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between six_column_fonts">
                               <span>Services:</span>
-                              <span>
+                              <span class="image_height_width_for_col_six">
                                  <img src="img/aerodownicon.svg">
                                  <img src="img/upaeroicon.svg">
                               </span>
                            </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between six_column_fonts">
                               <span>Gender:</span>
                               <span>Female</span>
                            </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between six_column_fonts">
                               <span>Available to:</span>
-                              <span>
+                              <span class="image_height_width_for_col_six">
                                  <img src="img/male-user.svg">
                                  <img src="img/woman-avatar.svg">
                                  <img src="img/Vector.svg">
@@ -629,7 +626,7 @@
                         <span class="add_to_favrate"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
                      </div>
                      <div class="six_column_bottom_content">
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between six_column_fonts">
                               <span>Perth- 27</span>
                               <span class="give_rating_after_get_servive">
                               <i class="fa fa-star-o" aria-hidden="true"></i>
@@ -639,24 +636,24 @@
                               <i class="fa fa-star-o" aria-hidden="true"></i>
                               </span>
                            </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between six_column_fonts">
                               <span>Price:</span>
                               <span>From $250 / hr</span>
                            </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between six_column_fonts">
                               <span>Services:</span>
-                              <span>
+                              <span class="image_height_width_for_col_six">
                                  <img src="img/aerodownicon.svg">
                                  <img src="img/upaeroicon.svg">
                               </span>
                            </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between six_column_fonts">
                               <span>Gender:</span>
                               <span>Female</span>
                            </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between six_column_fonts">
                               <span>Available to:</span>
-                              <span>
+                              <span class="image_height_width_for_col_six">
                                  <img src="img/male-user.svg">
                                  <img src="img/woman-avatar.svg">
                                  <img src="img/Vector.svg">
@@ -676,7 +673,7 @@
                         <span class="add_to_favrate"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
                      </div>
                      <div class="six_column_bottom_content">
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between six_column_fonts">
                               <span>Perth- 27</span>
                               <span class="give_rating_after_get_servive">
                               <i class="fa fa-star-o" aria-hidden="true"></i>
@@ -686,24 +683,24 @@
                               <i class="fa fa-star-o" aria-hidden="true"></i>
                               </span>
                            </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between six_column_fonts">
                               <span>Price:</span>
                               <span>From $250 / hr</span>
                            </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between six_column_fonts">
                               <span>Services:</span>
-                              <span>
+                              <span class="image_height_width_for_col_six">
                                  <img src="img/aerodownicon.svg">
                                  <img src="img/upaeroicon.svg">
                               </span>
                            </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between six_column_fonts">
                               <span>Gender:</span>
                               <span>Female</span>
                            </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between six_column_fonts">
                               <span>Available to:</span>
-                              <span>
+                              <span class="image_height_width_for_col_six">
                                  <img src="img/male-user.svg">
                                  <img src="img/woman-avatar.svg">
                                  <img src="img/Vector.svg">
@@ -723,7 +720,7 @@
                         <span class="add_to_favrate"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
                      </div>
                      <div class="six_column_bottom_content">
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between six_column_fonts">
                               <span>Perth- 27</span>
                               <span class="give_rating_after_get_servive">
                               <i class="fa fa-star-o" aria-hidden="true"></i>
@@ -733,24 +730,24 @@
                               <i class="fa fa-star-o" aria-hidden="true"></i>
                               </span>
                            </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between six_column_fonts">
                               <span>Price:</span>
                               <span>From $250 / hr</span>
                            </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between six_column_fonts">
                               <span>Services:</span>
-                              <span>
+                              <span class="image_height_width_for_col_six">
                                  <img src="img/aerodownicon.svg">
                                  <img src="img/upaeroicon.svg">
                               </span>
                            </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between six_column_fonts">
                               <span>Gender:</span>
                               <span>Female</span>
                            </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between six_column_fonts">
                               <span>Available to:</span>
-                              <span>
+                              <span class="image_height_width_for_col_six">
                                  <img src="img/male-user.svg">
                                  <img src="img/woman-avatar.svg">
                                  <img src="img/Vector.svg">
@@ -770,7 +767,7 @@
                         <span class="add_to_favrate"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
                      </div>
                      <div class="six_column_bottom_content">
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between six_column_fonts">
                               <span>Perth- 27</span>
                               <span class="give_rating_after_get_servive">
                               <i class="fa fa-star-o" aria-hidden="true"></i>
@@ -780,24 +777,24 @@
                               <i class="fa fa-star-o" aria-hidden="true"></i>
                               </span>
                            </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between six_column_fonts">
                               <span>Price:</span>
                               <span>From $250 / hr</span>
                            </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between six_column_fonts">
                               <span>Services:</span>
-                              <span>
+                              <span class="image_height_width_for_col_six">
                                  <img src="img/aerodownicon.svg">
                                  <img src="img/upaeroicon.svg">
                               </span>
                            </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between six_column_fonts">
                               <span>Gender:</span>
                               <span>Female</span>
                            </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
+                           <div class="d-flex justify-content-between six_column_fonts">
                               <span>Available to:</span>
-                              <span>
+                              <span class="image_height_width_for_col_six">
                                  <img src="img/male-user.svg">
                                  <img src="img/woman-avatar.svg">
                                  <img src="img/Vector.svg">
@@ -841,7 +838,7 @@
                            </div>
                            <div class="d-flex justify-content-between seven_column_fonts">
                               <span>Services:</span>
-                              <span>
+                              <span class="image_height_width_for_col_seven">
                                  <img src="img/aerodownicon.svg">
                                  <img src="img/upaeroicon.svg">
                               </span>
@@ -852,7 +849,55 @@
                            </div>
                            <div class="d-flex justify-content-between seven_column_fonts">
                               <span>Available to:</span>
-                              <span>
+                              <span class="image_height_width_for_col_seven">
+                                 <img src="img/male-user.svg">
+                                 <img src="img/woman-avatar.svg">
+                                 <img src="img/Vector.svg">
+                                 <img src="img/group.svg">
+                                 <img src="img/disabilities.svg">
+                           </span>
+                           </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg col-md-6 col-sm-6 mb-2">
+                  <div class="card card_box_style">
+                     <img class="card-img-top" src="img/service-provider/Frame-409.png" alt="Card image cap">
+                     <div class="seven_column_content_top d-flex justify-content-between">
+                        <span><img src="img/protected 2.svg" class="max_width_twenty_px"></span>
+                        <span class="seven_column_content_top_font_size">Carla Brasil</span>
+                        <span class="add_to_favrate"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+                     </div>
+                     <div class="seven_column_bottom_content">
+
+                           <div class="d-flex justify-content-between seven_column_fonts">
+                              <span>Perth- 27</span>
+                              <span class="give_rating_after_get_servive">
+                              <i class="fa fa-star-o" aria-hidden="true"></i>
+                              <i class="fa fa-star-o" aria-hidden="true"></i>
+                              <i class="fa fa-star-o" aria-hidden="true"></i>
+                              <i class="fa fa-star-o" aria-hidden="true"></i>
+                              <i class="fa fa-star-o" aria-hidden="true"></i>
+                              </span>
+                           </div>
+                           <div class="d-flex justify-content-between seven_column_fonts">
+                              <span>Price:</span>
+                              <span>From $250 / hr</span>
+                           </div>
+                           <div class="d-flex justify-content-between seven_column_fonts">
+                              <span class="image_height_width_for_col_seven">Services:</span>
+                              <span class="image_height_width_for_col_seven">
+                                 <img src="img/aerodownicon.svg">
+                                 <img src="img/upaeroicon.svg">
+                              </span>
+                           </div>
+                           <div class="d-flex justify-content-between seven_column_fonts">
+                              <span>Gender:</span>
+                              <span>Female</span>
+                           </div>
+                           <div class="d-flex justify-content-between seven_column_fonts">
+                              <span>Available to:</span>
+                              <span class="image_height_width_for_col_seven">
                                  <img src="img/male-user.svg">
                                  <img src="img/woman-avatar.svg">
                                  <img src="img/Vector.svg">
@@ -889,7 +934,7 @@
                            </div>
                            <div class="d-flex justify-content-between seven_column_fonts">
                               <span>Services:</span>
-                              <span>
+                              <span class="image_height_width_for_col_seven">
                                  <img src="img/aerodownicon.svg">
                                  <img src="img/upaeroicon.svg">
                               </span>
@@ -900,7 +945,7 @@
                            </div>
                            <div class="d-flex justify-content-between seven_column_fonts">
                               <span>Available to:</span>
-                              <span>
+                              <span class="image_height_width_for_col_seven">
                                  <img src="img/male-user.svg">
                                  <img src="img/woman-avatar.svg">
                                  <img src="img/Vector.svg">
@@ -937,7 +982,7 @@
                            </div>
                            <div class="d-flex justify-content-between seven_column_fonts">
                               <span>Services:</span>
-                              <span>
+                              <span class="image_height_width_for_col_seven">
                                  <img src="img/aerodownicon.svg">
                                  <img src="img/upaeroicon.svg">
                               </span>
@@ -948,7 +993,7 @@
                            </div>
                            <div class="d-flex justify-content-between seven_column_fonts">
                               <span>Available to:</span>
-                              <span>
+                              <span class="image_height_width_for_col_seven">
                                  <img src="img/male-user.svg">
                                  <img src="img/woman-avatar.svg">
                                  <img src="img/Vector.svg">
@@ -985,7 +1030,7 @@
                            </div>
                            <div class="d-flex justify-content-between seven_column_fonts">
                               <span>Services:</span>
-                              <span>
+                              <span class="image_height_width_for_col_seven">
                                  <img src="img/aerodownicon.svg">
                                  <img src="img/upaeroicon.svg">
                               </span>
@@ -996,7 +1041,7 @@
                            </div>
                            <div class="d-flex justify-content-between seven_column_fonts">
                               <span>Available to:</span>
-                              <span>
+                              <span class="image_height_width_for_col_seven">
                                  <img src="img/male-user.svg">
                                  <img src="img/woman-avatar.svg">
                                  <img src="img/Vector.svg">
@@ -1033,7 +1078,7 @@
                            </div>
                            <div class="d-flex justify-content-between seven_column_fonts">
                               <span>Services:</span>
-                              <span>
+                              <span class="image_height_width_for_col_seven">
                                  <img src="img/aerodownicon.svg">
                                  <img src="img/upaeroicon.svg">
                               </span>
@@ -1044,7 +1089,7 @@
                            </div>
                            <div class="d-flex justify-content-between seven_column_fonts">
                               <span>Available to:</span>
-                              <span>
+                              <span class="image_height_width_for_col_seven">
                                  <img src="img/male-user.svg">
                                  <img src="img/woman-avatar.svg">
                                  <img src="img/Vector.svg">
@@ -1081,7 +1126,7 @@
                            </div>
                            <div class="d-flex justify-content-between seven_column_fonts">
                               <span>Services:</span>
-                              <span>
+                              <span class="image_height_width_for_col_seven">
                                  <img src="img/aerodownicon.svg">
                                  <img src="img/upaeroicon.svg">
                               </span>
@@ -1092,55 +1137,7 @@
                            </div>
                            <div class="d-flex justify-content-between seven_column_fonts">
                               <span>Available to:</span>
-                              <span>
-                                 <img src="img/male-user.svg">
-                                 <img src="img/woman-avatar.svg">
-                                 <img src="img/Vector.svg">
-                                 <img src="img/group.svg">
-                                 <img src="img/disabilities.svg">
-                           </span>
-                           </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg col-md-6 col-sm-6 mb-2">
-                  <div class="card card_box_style">
-                     <img class="card-img-top" src="img/service-provider/Frame-409.png" alt="Card image cap">
-                     <div class="seven_column_content_top d-flex justify-content-between">
-                        <span><img src="img/protected 2.svg" class="max_width_twenty_px"></span>
-                        <span class="seven_column_content_top_font_size">Carla Brasil</span>
-                        <span class="add_to_favrate"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
-                     </div>
-                     <div class="seven_column_bottom_content">
-
-                           <div class="d-flex justify-content-between seven_column_fonts">
-                              <span>Perth- 27</span>
-                              <span class="give_rating_after_get_servive">
-                              <i class="fa fa-star-o" aria-hidden="true"></i>
-                              <i class="fa fa-star-o" aria-hidden="true"></i>
-                              <i class="fa fa-star-o" aria-hidden="true"></i>
-                              <i class="fa fa-star-o" aria-hidden="true"></i>
-                              <i class="fa fa-star-o" aria-hidden="true"></i>
-                              </span>
-                           </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
-                              <span>Price:</span>
-                              <span>From $250 / hr</span>
-                           </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
-                              <span>Services:</span>
-                              <span>
-                                 <img src="img/aerodownicon.svg">
-                                 <img src="img/upaeroicon.svg">
-                              </span>
-                           </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
-                              <span>Gender:</span>
-                              <span>Female</span>
-                           </div>
-                           <div class="d-flex justify-content-between seven_column_fonts">
-                              <span>Available to:</span>
-                              <span>
+                              <span class="image_height_width_for_col_seven">
                                  <img src="img/male-user.svg">
                                  <img src="img/woman-avatar.svg">
                                  <img src="img/Vector.svg">
@@ -1174,7 +1171,10 @@
                            </div>
                            <div class="nine_column_top_font_size d-flex justify-content-between">
                               <span>Services:</span>
-                              <span><img src="img/aerodownicon.svg"><img src="img/upaeroicon.svg"></span>
+                              <span class="image_height_width_for_col_nine">
+                                 <img src="img/aerodownicon.svg">
+                                 <img src="img/upaeroicon.svg">
+                              </span>
                            </div>                        
                      </div>
                   </div>
@@ -1193,7 +1193,10 @@
                            </div>
                            <div class="nine_column_top_font_size d-flex justify-content-between">
                               <span>Services:</span>
-                              <span><img src="img/aerodownicon.svg"><img src="img/upaeroicon.svg"></span>
+                              <span class="image_height_width_for_col_nine">
+                                 <img src="img/aerodownicon.svg">
+                                 <img src="img/upaeroicon.svg">
+                              </span>
                            </div>                        
                      </div>
                   </div>
@@ -1212,7 +1215,10 @@
                            </div>
                            <div class="nine_column_top_font_size d-flex justify-content-between">
                               <span>Services:</span>
-                              <span><img src="img/aerodownicon.svg"><img src="img/upaeroicon.svg"></span>
+                              <span class="image_height_width_for_col_nine">
+                                 <img src="img/aerodownicon.svg">
+                                 <img src="img/upaeroicon.svg">
+                              </span>
                            </div>                        
                      </div>
                   </div>
@@ -1231,7 +1237,10 @@
                            </div>
                            <div class="nine_column_top_font_size d-flex justify-content-between">
                               <span>Services:</span>
-                              <span><img src="img/aerodownicon.svg"><img src="img/upaeroicon.svg"></span>
+                              <span class="image_height_width_for_col_nine">
+                                 <img src="img/aerodownicon.svg">
+                                 <img src="img/upaeroicon.svg">
+                              </span>
                            </div>                        
                      </div>
                   </div>
@@ -1250,7 +1259,10 @@
                            </div>
                            <div class="nine_column_top_font_size d-flex justify-content-between">
                               <span>Services:</span>
-                              <span><img src="img/aerodownicon.svg"><img src="img/upaeroicon.svg"></span>
+                              <span class="image_height_width_for_col_nine">
+                                 <img src="img/aerodownicon.svg">
+                                 <img src="img/upaeroicon.svg">
+                              </span>
                            </div>                        
                      </div>
                   </div>
@@ -1269,7 +1281,10 @@
                            </div>
                            <div class="nine_column_top_font_size d-flex justify-content-between">
                               <span>Services:</span>
-                              <span><img src="img/aerodownicon.svg"><img src="img/upaeroicon.svg"></span>
+                              <span class="image_height_width_for_col_nine">
+                                 <img src="img/aerodownicon.svg">
+                                 <img src="img/upaeroicon.svg">
+                              </span>
                            </div>                        
                      </div>
                   </div>
@@ -1288,7 +1303,10 @@
                            </div>
                            <div class="nine_column_top_font_size d-flex justify-content-between">
                               <span>Services:</span>
-                              <span><img src="img/aerodownicon.svg"><img src="img/upaeroicon.svg"></span>
+                              <span class="image_height_width_for_col_nine">
+                                 <img src="img/aerodownicon.svg">
+                                 <img src="img/upaeroicon.svg">
+                              </span>
                            </div>                        
                      </div>
                   </div>
@@ -1307,7 +1325,10 @@
                            </div>
                            <div class="nine_column_top_font_size d-flex justify-content-between">
                               <span>Services:</span>
-                              <span><img src="img/aerodownicon.svg"><img src="img/upaeroicon.svg"></span>
+                              <span class="image_height_width_for_col_nine">
+                                 <img src="img/aerodownicon.svg">
+                                 <img src="img/upaeroicon.svg">
+                              </span>
                            </div>                        
                      </div>
                   </div>
@@ -1326,7 +1347,10 @@
                            </div>
                            <div class="nine_column_top_font_size d-flex justify-content-between">
                               <span>Services:</span>
-                              <span><img src="img/aerodownicon.svg"><img src="img/upaeroicon.svg"></span>
+                              <span class="image_height_width_for_col_nine">
+                                 <img src="img/aerodownicon.svg">
+                                 <img src="img/upaeroicon.svg">
+                              </span>
                            </div>                        
                      </div>
                   </div>
