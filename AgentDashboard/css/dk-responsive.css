@@ -32,6 +32,10 @@
   and (min-device-width: 320px) 
   and (max-device-width: 900px)
    {
+.ordingring-products {
+    display: flex;
+    text-align: center;
+}    
 .mx-3 {
     margin-left: 0.3rem!important;
 }
@@ -46,7 +50,10 @@
     height: 100vh;
     overflow: hidden;
     transition: width .5s;
-
+}
+.product-categories-flex {
+    display: flex;
+    justify-content: center;
 }
 .heading-with-btn {
     display: flex;
@@ -64,9 +71,6 @@
     width: 200px;
     overflow: visible;
 }
- 
-
-
 .h3, h3 {
     font-size: 1.55rem;
 }
@@ -117,7 +121,7 @@ margin:0px;
 }
 
 select.select-width option{
-font-size: 9px;width: 30%;
+font-size: 14px;width: 30%;
 } 
 
  td.qty select {
@@ -164,8 +168,11 @@ padding: 10px;
 .alert-light div{
 font-size: 14px;
 }
-
- 
+.select-width {
+    white-space: normal;
+    padding: 5px 15px;
+    border: 1px solid #5d6d7e !important;
+}
 
 }
 
@@ -201,6 +208,11 @@ font-size: 14px;
     display: flex;
     justify-content: left;
 }
+.heading-btn-inline button {
+    width: 65%;
+    margin-top: 10px;
+    margin-left: 0px;
+}
 
 }
 
@@ -231,6 +243,6 @@ font-size: 14px;
 }
 .full-width-for-ipad {
     flex: none;
-    max-width: fit-content;
+    max-width: fit-content;margin-bottom: 30px;
 }
 }
