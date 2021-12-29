@@ -5,9 +5,67 @@
 
 /*tool tip start here*/
 
+div.tip div {
+    display: none
+}
+div.tip span{
+    
+}
+.trikon_style {
+    margin-left: 15px;
+    background: #FFFFFF;
+    padding: 20px 40px !important;
+    position: relative;
+    box-shadow: 2px 1px 12px 2px #7878789e;
+}
+
+.trikon_style:after{
+   content: '';
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: 10%;
+    width: 0;
+    height: 0;
+    border-color: transparent transparent transparent #fff;
+    border-style: solid;
+    border-width: 10px;
+    transform: rotate(270deg);
+}
+
+div.tip:hover div {
+    position: absolute;
+    padding: 0px;
+    display: block;
+    z-index: 100;
+    right: 0px;
+  
+    text-decoration: none
+}
+
+.manage_toolkit_font{
+font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 30px;
+color: #2C3E50;
+}
+
 /*tool tip end here*/
 
-
+.padding_twelve_px{
+    padding: 12px;
+}
+.back_to_search_btn a{
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
 
 .max_width_for_content{
     max-width: 1920px;
@@ -283,7 +341,7 @@ p {
     line-height: 36px;
     padding-bottom: 10px;
     -webkit-text-stroke: 2px #0c223d;
-    text-shadow: 2px 4px 9px #00000091;
+    text-shadow: 2px 4px 4px #00000091;
 }
 
 .form-group label {
@@ -1654,6 +1712,11 @@ progress.dislike::-webkit-progress-value {
     color: #0c223d;
 }
 
+.arroww_tip_crousal {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
 .arroww {
     position: absolute;
     right: 15px;
@@ -1671,12 +1734,26 @@ progress.dislike::-webkit-progress-value {
     margin: 0 auto;
     padding-bottom: 20px;
 }
+.carousel_remove_in_tip {
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
 .carousel .carousel-item {
     text-align: center;
     overflow: hidden;
 }
 .carousel .carousel-item a {
     color: #eb7245;
+}
+.tip_carousel_item_text p{
+    text-align: left;
+    margin-bottom: 0px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000000;
 }
 .carousel .img-box {
     width: 107px;
@@ -1714,6 +1791,14 @@ progress.dislike::-webkit-progress-value {
 .carousel .testi_icon_color b {
     color: #ff3c5f;
 }
+.arroww_tip_crousal .carousel-control-prev,
+.arroww_tip_crousal .carousel-control-next {
+    width: 30px;
+    height: 30px;
+    background: #2c3e50;
+    text-shadow: none;
+    top: 4px;
+}
 .arroww .carousel-control-prev,
 .arroww .carousel-control-next {
     width: 30px;
@@ -1722,16 +1807,28 @@ progress.dislike::-webkit-progress-value {
     text-shadow: none;
     top: 4px;
 }
+.arroww_tip_crousal .carousel-control-prev i,
+.arroww_tip_crousal .carousel-control-next i {
+    font-size: 20px;
+    margin-right: 2px;
+}
 .arroww .carousel-control-prev i,
 .arroww .carousel-control-next i {
     font-size: 20px;
     margin-right: 2px;
+}
+.arroww_tip_crousal .carousel-control-prev {
+    left: auto;
+    right: 40px;
 }
 .arroww .carousel-control-prev {
     left: auto;
     right: 40px;
 }
 .arroww .carousel-control-next i {
+    margin-right: -2px;
+}
+.arroww_tip_crousal .carousel-control-next i {
     margin-right: -2px;
 }
 .carousel .carousel-indicators {
@@ -2347,7 +2444,18 @@ color: #000000;
     display: none;
 }
 
+.go_to_top_icon{
+    position: fixed;
+    bottom: 10%;
+    right: 3.5%;
+    z-index: 1;
+    transition: all .2s;
+    opacity: 0;
 
-
+}
+.go_to_btn_show{
+    opacity: 1;
+    transition: all .2s;
+}
 
 /*select range end here*/

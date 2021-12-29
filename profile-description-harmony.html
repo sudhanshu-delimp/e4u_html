@@ -105,8 +105,8 @@
       
 
 <div class="profile_description_banner">
-         <div class="container-fluid">
-            <a href="#">Back to search</a>
+         <div class="container-fluid back_to_search_btn pt-2">
+            <a href="#"><img src="img/leftsymbole.svg"> Back to search</a>
          </div>
          <div class="container">
             <div class="profile_page_title">
@@ -194,7 +194,7 @@
                                        <img src="img/areodownimg.png">
                                        <div class="div_contain_text">
                                           <div class="profile_message">
-                                             <h4>Incalls</h4>
+                                             <h4>Individual</h4>
                                           </div>
                                           <div class="profile_hr">
                                              <h4>100/hr</h4>
@@ -207,7 +207,7 @@
                                        <img src="img/aeroupimg.png">
                                        <div class="div_contain_text">
                                           <div class="profile_message">
-                                             <h4>Outcalls</h4>
+                                             <h4>2+ Person</h4>
                                           </div>
                                           <div class="profile_hr">
                                              <h4>300/hr</h4>
@@ -546,10 +546,10 @@
          </div>
       </div>
       <div class="row pt-2">
-         <div class="col-6 px-0">        
+         <div class="col-md-6 col-12 mb-2 px-0">        
             <button type="button" class="btn profile_message_btn_cc"><img src="img/messageicon.png" class="image_20px_msg">Message Me</button>
          </div>
-         <div class="col-6 px-0">        
+         <div class="col-md-6 col-12 mb-2 px-0">        
             <button type="button" class="btn profile_message_btn_cc"><img src="img/messageicon.png" class="image_20px_msg">Report Advertiser</button>
          </div>
          </div>
@@ -562,11 +562,11 @@
              
    <div class="box_shadow manage_padding_margin_bg_color">
    <div class="profile_card_border profile_description_contect">
-      <h2>Contacting Us</h2>
+      <h2><img src="img/card-account-mail-outline.svg"> Contacting Us</h2>
    </div>
    <div class="padding_20_tob_btm_side">
+      <p>You can contact us by: <img src="img/wechat.svg"> or <img src="img/phoneicon.svg"></p>
       <b>When texting me please say:</b>
-      <p>You can contact us by:</p>
       <p class="profile_description_contect_pera">
       i [name of Advertiser], I found you on Escorts4u ..." on our number 0484 320 437
       </p>
@@ -589,7 +589,9 @@
 
 
 
-
+<div class="go_to_top_icon" id="gototop">
+   <a href="#"><img src="img/gototop.svg"></a>
+</div>
 
 
       <footer class="footer_bg_color padding_fifty_top_and_btm ">
@@ -689,5 +691,30 @@
       <script src="js/bootstrap.min.js"></script>
       <script src="js/jquery-ui.min.js"></script>
       <script type="text/javascript" src="js/jqueryuijs.js"></script>
+
+
+
+      <script type="text/javascript">
+         var btn = $('#gototop');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('go_to_btn_show');
+  } else {
+    btn.removeClass('go_to_btn_show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+      </script>
+
+
+
+
+
    </body>
 </html>

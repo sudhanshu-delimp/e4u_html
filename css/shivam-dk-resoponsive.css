@@ -5,6 +5,18 @@
   and (max-device-width: 568px)
 {
 
+   div.tip:hover div{
+      left: 15px;
+    }
+.manage_toolkit_font{
+    font-size: 12px;
+    }
+
+.trikon_style{
+    padding: 8px 7px !important;
+    width: fit-content;
+    }
+
 .profile-sidebar-margin-top{
   margin-top: 10px
 }
@@ -179,9 +191,22 @@ ul.footerbtn-flex li{
   and (min-device-width: 768px) 
   and (max-device-width: 1030px) 
   and (-webkit-min-device-pixel-ratio: 1) {
-.homebanner_bg{
+
+    div.tip:hover div{
+      left: 15px;
+    }
+.manage_toolkit_font{
+    font-size: 12px;
+    }
+
+.trikon_style{
+    padding: 8px 7px !important;
+    width: fit-content;
+    }
+
+/*.homebanner_bg{
 	background-image:none; 
-}
+}*/
 .profile-sidebar-margin-top{
   margin-top: -95px
 }
@@ -250,6 +275,14 @@ ul.footerbtn-flex li{
   and (max-device-width: 1112px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
+.profile_message_btn_cc{
+    font-size: 11px;width: 98%;
+}
+
+
+    .blue-bg-before::before{
+            height: 75vh;
+    }
 
   	.profile-sidebar-margin-top{
   margin-top: -100px

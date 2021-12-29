@@ -101,8 +101,8 @@
       </nav>
 
       <div class="profile_description_banner">
-         <div  class="container-fluid">
-            <a href="#">Back to search</a>
+         <div class="container-fluid back_to_search_btn pt-2">
+            <a href="#"><img src="img/leftsymbole.svg"> Back to search</a>
          </div>
          <div class="container">
             <div class="profile_page_title">
@@ -498,7 +498,57 @@
       <div class="content">
          <div class="accodien_manage_padding_content">
             <div class="table-responsive">
-           <table class="table table_border_dash">
+               <div class="row">
+   <div class="col-md-4">
+      <table class="table table_border_dash">
+         <thead>
+            <tr class="background_color_table_head_color">
+               <th scope="col">Description</th>
+               <th scope="col">Extra</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td class="table_border_dash_left">Anal</td>
+               <td class="table_border_solid_left"></td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+   <div class="col-md-4">
+      <table class="table table_border_dash">
+         <thead>
+            <tr class="background_color_table_head_color">
+               <th scope="col">Description</th>
+               <th scope="col">Extra</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td class="table_border_dash_left">Anal</td>
+               <td class="table_border_solid_left"></td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+   <div class="col-md-4">
+      <table class="table table_border_dash">
+         <thead>
+            <tr class="background_color_table_head_color">
+               <th scope="col">Description</th>
+               <th scope="col">Extra</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td class="table_border_dash_left">Anal</td>
+               <td class="table_border_solid_left"></td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+</div>
+<table class="table table_border_dash">
   <thead>
     <tr class="background_color_table_head_color">
       <th scope="col">Description</th>
@@ -852,6 +902,52 @@
 </div>
 
 
+   <div class="box_shadow padding_twelve_px">
+   <div class="profile_card_border profile_description_contect position-relative">
+      <h2><img src="img/informationtip.svg"> Tips</h2>
+
+       <!-- Carousel controls start-->       
+      <div class="arroww_tip_crousal">
+         <a class="carousel-control-prev manage_oprcity" href="#tipcrousal" data-slide="prev">
+         <i class="fa fa-angle-left"></i>
+         </a>
+
+         <!-- indicatert start here -->
+
+         <div class="num"></div>         
+
+         <!-- indicatert end here -->
+
+         <a class="carousel-control-next manage_oprcity" href="#tipcrousal" data-slide="next">
+         <i class="fa fa-angle-right"></i>
+         </a>
+      </div>
+      <!-- Carousel controls end-->
+
+   </div>
+   <div class="pt-2">
+      <div id="tipcrousal" class="carousel slide carousel_remove_in_tip" data-ride="carousel" data-wrap="false" data-interval="false">
+
+          <ol class="carousel-indicators">
+    <li data-target="#tipcrousal" data-slide-to="0" class="active"></li>
+    <li data-target="#tipcrousal" data-slide-to="1"></li>
+  </ol>
+                                 <!-- Wrapper for carousel items -->
+                                 <div class="carousel-inner">
+
+                                    <div class="carousel-item tip_carousel_item_text  active">
+                                       <p>Avoid using email, use our messenging centre.</p>                                      
+                                    </div>
+
+                                    <div class="carousel-item tip_carousel_item_text">
+                                       <p>Avoid using email, use our messenging centre.</p>
+                                    </div>
+                                 </div>                                 
+                              </div>
+
+   </div>
+</div>
+
    
     <div class="box_shadow manage_padding_margin_bg_color">
    <div class="profile_card_border profile_description_contect">
@@ -904,10 +1000,15 @@
 
 
 
- 
+
+   
+<div class="go_to_top_icon">
+   <a href="#"><img src="img/gototop.svg"></a>
+</div>
 
 
-      <footer class="footer_bg_color padding_fifty_top_and_btm ">
+
+      <footer class="footer_bg_color padding_fifty_top_and_btm">
             <section class="footer_mange_padding">
                 <div class="container-fluid">
                     <div class="row">
@@ -1003,5 +1104,33 @@
       <script src="js/bootstrap.min.js"></script>
       <script src="js/jquery-ui.min.js"></script>
       <script type="text/javascript" src="js/jqueryuijs.js"></script>
+
+<script type="text/javascript">
+   
+var totalItems = $('.item').length;
+            var currentIndex = $('div.item.active').index() + 1;
+
+            var down_index;
+            $('.num').html(''+currentIndex+'/'+totalItems+'');
+
+                $(".next").click(function(){
+                currentIndex_active = $('div.item.active').index() + 2;
+                if (totalItems >= currentIndex_active)
+                {
+                    down_index= $('div.item.active').index() + 2;
+                    $('.num').html(''+currentIndex_active+'/'+totalItems+'');
+                }
+            });
+
+                $(".prev").click(function(){
+                    down_index=down_index-1;
+                if (down_index >= 1 )
+                {
+                    $('.num').html(''+down_index+'/'+totalItems+'');
+                }
+            });
+
+</script>
+
    </body>
 </html>
