@@ -1798,6 +1798,7 @@ progress.dislike::-webkit-progress-value {
     background: #2c3e50;
     text-shadow: none;
     top: 4px;
+    border-radius: 4px;
 }
 .arroww .carousel-control-prev,
 .arroww .carousel-control-next {
@@ -1809,7 +1810,7 @@ progress.dislike::-webkit-progress-value {
 }
 .arroww_tip_crousal .carousel-control-prev i,
 .arroww_tip_crousal .carousel-control-next i {
-    font-size: 20px;
+    font-size: 17px;
     margin-right: 2px;
 }
 .arroww .carousel-control-prev i,
@@ -1819,12 +1820,25 @@ progress.dislike::-webkit-progress-value {
 }
 .arroww_tip_crousal .carousel-control-prev {
     left: auto;
-    right: 40px;
+    right: 70px;
 }
 .arroww .carousel-control-prev {
     left: auto;
     right: 40px;
 }
+
+.indicator_align_between_aero_center{
+    position: absolute;
+    left: -63px;
+    top: 10px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #0C223D;
+}
+
 .arroww .carousel-control-next i {
     margin-right: -2px;
 }
