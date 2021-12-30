@@ -869,7 +869,8 @@
 
   <div class="row pt-2">
       <div class="col-5">        
-         <button type="button" class="btn profile_message_btn_cc"><img src="img/messageicon.png" class="image_20px_msg">Message Me</button>
+         <button type="button" class="btn profile_message_btn_cc" data-toggle="modal" data-target="#mysendmessage">
+            <img src="img/messageicon.png" class="image_20px_msg">Message Me</button>
       </div>
       <div class="col-7 text-right">        
         <button type="button" class="btn profile_message_btn_cc"><img src="img/messageicon.png" class="image_20px_msg">Report Advertiser</button>
@@ -905,46 +906,32 @@
    <div class="box_shadow padding_twelve_px">
    <div class="profile_card_border profile_description_contect position-relative">
       <h2><img src="img/informationtip.svg"> Tips</h2>
-
-       <!-- Carousel controls start-->       
+      <!-- Carousel controls start-->       
       <div class="arroww_tip_crousal">
-         <a class="carousel-control-prev manage_oprcity" href="#tipcrousal" data-slide="prev">
+         <a class="carousel-control-prev manage_oprcity " href="#tipcrousal" data-slide="prev">
          <i class="fa fa-angle-left"></i>
          </a>
-
          <!-- indicatert start here -->
-
-         <div class="num"></div>         
-
+         <div class="num-01"></div>
          <!-- indicatert end here -->
-
-         <a class="carousel-control-next manage_oprcity" href="#tipcrousal" data-slide="next">
+         <a class="carousel-control-next manage_oprcity prev-01 next-01" href="#tipcrousal" data-slide="next">
          <i class="fa fa-angle-right"></i>
          </a>
       </div>
       <!-- Carousel controls end-->
-
    </div>
    <div class="pt-2">
-      <div id="tipcrousal" class="carousel slide carousel_remove_in_tip" data-ride="carousel" data-wrap="false" data-interval="false">
-
-          <ol class="carousel-indicators">
-    <li data-target="#tipcrousal" data-slide-to="0" class="active"></li>
-    <li data-target="#tipcrousal" data-slide-to="1"></li>
-  </ol>
-                                 <!-- Wrapper for carousel items -->
-                                 <div class="carousel-inner">
-
-                                    <div class="carousel-item tip_carousel_item_text  active">
-                                       <p>Avoid using email, use our messenging centre.</p>                                      
-                                    </div>
-
-                                    <div class="carousel-item tip_carousel_item_text">
-                                       <p>Avoid using email, use our messenging centre.</p>
-                                    </div>
-                                 </div>                                 
-                              </div>
-
+      <div id="tipcrousal" class="carousel slide carousel_remove_in_tip" data-ride="carousel" data-interval="false">
+         <!-- Wrapper for carousel items -->
+         <div class="carousel-inner">
+            <div class="carousel-item tip_carousel_item_text active item-01">
+               <p>Avoid using email, use our messenging centre.</p>
+            </div>
+            <div class="carousel-item tip_carousel_item_text item-01">
+               <p>Avoid using email, use our messenging centre.</p>
+            </div>
+         </div>
+      </div>
    </div>
 </div>
 
@@ -994,6 +981,70 @@
    </div>
 
 
+
+
+
+
+<!-- model start here -->
+
+
+
+
+<!-- Modal -->
+<div class="modal fade ss" id="mysendmessage" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header main_bg_color">
+         <img src="img/smallsmsicon.png" class="img_resize_in_smscreen">
+        <h5 class="modal-title popup_modal_title_new" id="exampleModalLabel">Send New Harmony Nature Massage a message</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><img src="img/newcross.png" class="img-fluid img_resize_in_smscreen"></span>
+        </button>
+      </div>
+       <form action="" method="">
+      <div class="modal-body">
+       
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" name="email" placeholder="Email address">
+   </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+      <label for="email">Mobile</label>
+      <input type="text" class="form-control" name="mobile" placeholder="Mobile number">
+   </div>
+    </div>
+  </div>
+  <div class="row">
+     <div class="col">
+          <div class="form-group popup_massage_box">
+    <label for="exampleFormControlTextarea1">Message</label>
+    <textarea class="form-control popup_massage_box" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+     </div>
+  </div>
+  
+
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn main_bg_color site_btn_primary">Send Message</button>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- model end here -->
 
 
 
@@ -1107,28 +1158,31 @@
 
 <script type="text/javascript">
    
-var totalItems = $('.item').length;
-            var currentIndex = $('div.item.active').index() + 1;
+var totalItems = $('.item-01').length;
+var currentIndex = $('div.carousel-item').index() + 1;
+var down_index;
+$('.num-01').html('' + currentIndex + '&nbsp;/&nbsp;' + totalItems + '');
+$(".next-01").click(function() {
+  currentIndex_active = $('div.carousel-item.active').index() + 2;
+  if (totalItems >= currentIndex_active) {
+    down_index = $('div.carousel-item.active').index() + 2;
+    $('.num-01').html('' + currentIndex_active + '&nbsp;/&nbsp;' + totalItems + '');
+  } else {
+    down_index = 1; //just to make 0 to go to else part when back button is clicked
+    $('.num-01').html('1' + '&nbsp;/&nbsp;' + totalItems + '');
 
-            var down_index;
-            $('.num').html(''+currentIndex+'/'+totalItems+'');
+  }
+});
 
-                $(".next").click(function(){
-                currentIndex_active = $('div.item.active').index() + 2;
-                if (totalItems >= currentIndex_active)
-                {
-                    down_index= $('div.item.active').index() + 2;
-                    $('.num').html(''+currentIndex_active+'/'+totalItems+'');
-                }
-            });
-
-                $(".prev").click(function(){
-                    down_index=down_index-1;
-                if (down_index >= 1 )
-                {
-                    $('.num').html(''+down_index+'/'+totalItems+'');
-                }
-            });
+$(".prev-01").click(function() {
+  down_index = down_index - 1;
+  if (down_index >= 1) {
+    $('.num-01').html('' + down_index + '&nbsp;/&nbsp;' + totalItems + '');
+  } else {
+    down_index = totalItems; //last slide value 
+    $('.num-01').html('' + totalItems + '&nbsp;/&nbsp;' + totalItems + '');
+  }
+});
 
 </script>
 
