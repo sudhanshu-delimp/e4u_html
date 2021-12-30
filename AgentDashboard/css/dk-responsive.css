@@ -32,6 +32,16 @@
   and (min-device-width: 320px) 
   and (max-device-width: 900px)
    {
+
+.manage_social_profile_icons i {
+    padding: 8px 9px !important;
+    height: 35px !important;
+    width: 35px !important;
+    font-size: 20px !important;
+}
+.ordingring-products div {
+    margin-right: 6px;
+}
 .ordingring-products {
     display: flex;
     text-align: center;
@@ -173,6 +183,10 @@ font-size: 14px;
     padding: 5px 15px;
     border: 1px solid #5d6d7e !important;
 }
+.color-black select{
+    width: auto;
+}
+
 
 }
 
@@ -200,6 +214,9 @@ font-size: 14px;
     .search-form-bg {
     width: 220px;
  }
+ .ordingring-products div {
+    margin-right: 28px;    text-align: center;
+}
     .full-width-for-ipad{
        flex: 0 0 100%;
     max-width: 100%;
@@ -212,6 +229,15 @@ font-size: 14px;
     width: 65%;
     margin-top: 10px;
     margin-left: 0px;
+}
+.manage_social_profile_icons i {
+    color: #FF3C5F;
+    padding: 13px 14px !important;
+    height: 45px !important;
+    width: 45px !important;
+    background: #0C223D;
+    border-radius: 50%;
+    font-size: 20px;
 }
 
 }
@@ -244,5 +270,19 @@ font-size: 14px;
 .full-width-for-ipad {
     flex: none;
     max-width: fit-content;margin-bottom: 30px;
+}
+.full-width-for-ipad-select{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.tab-about-me-row-padding {
+    padding: 0px 80px 0px 0px;
+}
+.tab-about-me-row-padding label {
+    font-size: 13px;
+    padding-top: 5px;
+}
+.tab-about-me-row-padding .col-sm-7 .form-control-sm{
+    font-size: 12px !important;
 }
 }

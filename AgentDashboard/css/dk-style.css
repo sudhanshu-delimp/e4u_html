@@ -399,7 +399,7 @@ color:#2C3E50 !important
 .member-id{
     display: flex;
     align-items: center;
-  padding-top: 10px;
+  padding-top: 10px;padding-left: 8px;
 }
 .member-id svg{
     margin-right: 10px;
@@ -454,6 +454,9 @@ color:#0c223d ;
     flex-direction: column;
     justify-content: space-between;
     margin-left: 15px;
+}
+.tab-about-me-row-padding{
+    padding: 0px 75px 0px 0px;
 }
 /*tab css end* /
 /*first tab about me section*/
@@ -520,7 +523,7 @@ color:#0c223d ;
 .about_me_drop_down_info{
     padding: 20px;
     background: #fff;
-    margin: 15px 0px;
+    margin: 15px 20px;
 }
 
 .about_me_heading_in_first_tab{
@@ -565,7 +568,7 @@ color:#0c223d ;
     display: inline-block;
 }
 .input_border{
-    width: 60px;
+    width: 70px;
     border-color: transparent;
     border-radius: 5px;
     padding: 3px 8px;
@@ -580,19 +583,102 @@ color:#0c223d ;
  background: #5D6D7E;
  border-radius: 5px;
  color: white;
+ margin-bottom: 10px;
 }
-
+span.dollar-sign{
+    position: relative;
+}
+.my_service_anal span.dollar-sign::before{
+    
+    content: '$';
+    position: absolute;
+    left: 55px;
+    top: 0;
+  
+    z-index: 2;
+    color: #111;
+}
 .service_rate_dolor_symbol{
     display: flex;
     flex-wrap: nowrap;
     gap: 8px;
+    align-items: center;
+}
+.service_rate_dolor_symbol span{
+    font-weight: 500
+}
+.dollar-before {
+    padding: 3px 8px 3px 18px;
+}
+.rates-icon{
+    text-align: center;
+    padding-bottom: 12px;
+    padding-top: 12px;
+}
+
+.rate-td-width1{
+    width: 120px;white-space: nowrap;
+}
+.rate-td-width2{
+    width: 170px;white-space: nowrap;
+}
+.color-black{
+    color:#000;
+}
+.rate-table .table thead th{
+    border-bottom:none;
+    border-top: none;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.rate-table .table td{
+    border-bottom:none;
+    border-top: none;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 /*second tab myservice and rate end here*/
 
+.tab-available{    font-size: 17px;
+    font-weight: 500;
+}
+.available-column{
+    float: left;
+}
 
-
+.available-tab-table  .table thead th{
+    border-bottom:none;
+    border-top: none;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.available-tab-table  .table td{
+    border-bottom:none;
+    border-top: none;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.available-column{
+    padding-top: 8px;
+    color:#000;
+    font-weight: 500;
+}
+.td-padding-0{
+    padding: 0px 2px !important;
+}
+.available-th-width{
+    padding-left: 0 !important;
+    padding-top: 5px !important;
+    border-top: 0px !important;
+    width: 114px !important;
+}
 /*tab css end*/
+
+
+.available-tab-table .table td{
+    white-space: nowrap;
+}
 
 /*complite profile popup style start here*/
 
