@@ -1429,6 +1429,38 @@ color: #192A3E;
     }
 }
 
+@media screen and (min-width: 992px) {
+    .responsive_colums_in_lg_five_col > div{
+        width: 20%;
+        max-width: 20%;
+        flex-basis: unset;
+    }
+}
+@media screen and (min-width: 992px) {
+    .responsive_colums_in_lg_six_col > div{
+        width: 16.66%;
+        max-width: 16.66%;
+        flex-basis: unset;
+    }
+}
+@media screen and (min-width: 992px) {
+    .responsive_colums_in_lg_seven_col > div{
+        width: 14.28%;
+        max-width: 14.28%;
+        flex-basis: unset;
+    }
+}
+@media screen and (min-width: 992px) {
+    .responsive_colums_in_lg_nine_col > div{
+        width: 11.11%;
+        max-width: 11.11%;
+        flex-basis: unset;
+    }
+}
+
+
+
+
 /* filter service provider responsive end here */
 
 /*filter service provider end here*/
